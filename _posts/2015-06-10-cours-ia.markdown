@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Intelligence Artificielle"
-date:   2015-10-10 18:14:06
+date:   2015-06-10 18:14:06
 categories: ["IA"]
 tag: cours
 excerpt: > # this means to ignore newlines until "baseurl:"
