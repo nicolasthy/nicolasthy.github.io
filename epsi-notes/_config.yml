@@ -3,7 +3,7 @@ title: EPSI Notes
 email: nicolas.thiry@epsi.fr
 description: > # this means to ignore newlines until "baseurl:"
   Ce site est destiné aux élèves de la classe I4 Alternance de l'EPSI Lyon.
-baseurl: "/epsi-notes/" # the subpath of your site, e.g. /blog/
+baseurl: "/epsi-notes" # the subpath of your site, e.g. /blog/
 url: "http://nicolasthy.github.io/" # the base hostname & protocol for your site
 twitter_username: nicolasthy
 github_username:  nicolasthy
