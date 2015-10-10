@@ -197,6 +197,8 @@
     display: -webkit-flex;
     -webkit-justify-content: space-between; /* Safari */
     justify-content:         space-between;
+    -webkit-justify-content: flex-start; /* Safari */
+    justify-content:         flex-start;
 
     > li {
         position: relative;
