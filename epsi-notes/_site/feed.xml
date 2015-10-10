@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EPSI Notes</title>
+    <description>Ce site est destiné aux élèves de la classe I4 Alternance de l&#39;EPSI Lyon.
+</description>
+    <link>http://nicolasthy.github.io/epsi-notes/</link>
+    <atom:link href="http://nicolasthy.github.io/epsi-notes/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 10 Oct 2015 23:57:08 +0200</pubDate>
+    <lastBuildDate>Sat, 10 Oct 2015 23:57:08 +0200</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Intelligence Artificielle</title>
+        <description>&lt;h1 id=&quot;intelligence-artificielle&quot;&gt;1. Intelligence artificielle&lt;/h1&gt;
+
+&lt;p&gt;Deux buts de l’IA&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Simuler l’intelligence humaine&lt;/li&gt;
+  &lt;li&gt;Réussir les tâches que les humains ne peuvent pas faire&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;dfinir-lintelligence&quot;&gt;2. Définir l’intelligence&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;pre&gt;&lt;code&gt;10% du cerveau c&#39;est de la merde
+QI aussi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;gardner-1983&quot;&gt;Gardner, 1983&lt;/h2&gt;
+&lt;p&gt;Plusieurs formes d’intelligence :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Logico-mathématiques -  Manipuler les chiffres /résonnement&lt;/li&gt;
+  &lt;li&gt;Visio-spatial -  Capacité à visualiser en 3D&lt;/li&gt;
+  &lt;li&gt;Verbo-linguistique -  La parole / langage&lt;/li&gt;
+  &lt;li&gt;Intra-personnelle -  Exprimer ses besoins, connaitre ses forces&lt;/li&gt;
+  &lt;li&gt;Inter-personnelle -  Relation à autrui, connaitre les autres&lt;/li&gt;
+  &lt;li&gt;Kinésthésique -  Se représenter dans l’espace, les gestes&lt;/li&gt;
+  &lt;li&gt;Naturaliste  -  Trier les choses, les hiérarchiser&lt;/li&gt;
+  &lt;li&gt;Musicale -  Reconnaitre, reproduire, composer&lt;/li&gt;
+  &lt;li&gt;Spirituelle -  Capacité à se poser des questions&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;pre&gt;&lt;code&gt;L&#39;intelligence c&#39;est la capacité à s&#39;adapter.
+Piaget, 1963
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;intelligence-du-vivant&quot;&gt;3. Intelligence du vivant&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Singe qui parle le langage des signes&lt;/li&gt;
+  &lt;li&gt;Chien qui est intelligent&lt;/li&gt;
+  &lt;li&gt;Cheval qui compte des fois mais en fait non, sauf si&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 10 Oct 2015 20:14:06 +0200</pubDate>
+        <link>http://nicolasthy.github.io/epsi-notes/ia/2015/10/10/welcome-to-jekyll-3.html</link>
+        <guid isPermaLink="true">http://nicolasthy.github.io/epsi-notes/ia/2015/10/10/welcome-to-jekyll-3.html</guid>
+        
+        <category>cours</category>
+        
+        
+        <category>ia</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 10 Oct 2015 19:14:06 +0200</pubDate>
+        <link>http://nicolasthy.github.io/epsi-notes/jekyll/update/2015/10/10/welcome-to-jekyll-2.html</link>
+        <guid isPermaLink="true">http://nicolasthy.github.io/epsi-notes/jekyll/update/2015/10/10/welcome-to-jekyll-2.html</guid>
+        
+        <category>tp</category>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 10 Oct 2015 19:14:06 +0200</pubDate>
+        <link>http://nicolasthy.github.io/epsi-notes/jekyll/update/2015/10/10/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://nicolasthy.github.io/epsi-notes/jekyll/update/2015/10/10/welcome-to-jekyll.html</guid>
+        
+        <category>cours</category>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
