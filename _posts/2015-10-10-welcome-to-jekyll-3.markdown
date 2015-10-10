@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Intelligence Artificielle"
+date:   2015-10-10 18:14:06
+categories: ["IA"]
+tag: cours
+excerpt: > # this means to ignore newlines until "baseurl:"
+  Deux buts de l'IA
+  - Simuler l'intelligence humaine
+  - Réussir les tâches que les humains ne peuvent pas faire
+---
+# 1. Intelligence artificielle
+
+Deux buts de l'IA
+
+- Simuler l'intelligence humaine
+- Réussir les tâches que les humains ne peuvent pas faire
+
+# 2. Définir l'intelligence
+
+> 	10% du cerveau c'est de la merde
+	QI aussi
+
+## Gardner, 1983
+Plusieurs formes d'intelligence :
+
+1. Logico-mathématiques -  Manipuler les chiffres /résonnement
+2. Visio-spatial -  Capacité à visualiser en 3D
+3. Verbo-linguistique -  La parole / langage
+4. Intra-personnelle -  Exprimer ses besoins, connaitre ses forces
+5. Inter-personnelle -  Relation à autrui, connaitre les autres
+6. Kinésthésique -  Se représenter dans l'espace, les gestes
+7. Naturaliste  -  Trier les choses, les hiérarchiser
+8. Musicale -  Reconnaitre, reproduire, composer
+9. Spirituelle -  Capacité à se poser des questions
+
+> 	L'intelligence c'est la capacité à s'adapter.
+	Piaget, 1963
+
+
+# 3. Intelligence du vivant
+
+- Singe qui parle le langage des signes
+- Chien qui est intelligent
+- Cheval qui compte des fois mais en fait non, sauf si
