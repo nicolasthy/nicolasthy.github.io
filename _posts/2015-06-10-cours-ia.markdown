@@ -4,6 +4,7 @@ title:  "Intelligence Artificielle"
 date:   2015-06-10 18:14:06
 categories: ["IA"]
 tag: cours
+pdf: react-cheatsheet.pdf
 excerpt: > # this means to ignore newlines until "baseurl:"
   Deux buts de l'IA
   - Simuler l'intelligence humaine
