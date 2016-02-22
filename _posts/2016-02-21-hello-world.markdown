@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Hello World!"
-date:   2016-02-22 13:07:56 -0500
+date:   2016-02-21 16:01:07 -0500
 categories: jekyll update
 ---
-
+Coucou
 Hi, my name is Nicolas Thiry, I am a french student in Lyon at EPSI and I am currently completing a Master Degree in Computer Science. In addition I have been hired as a Co-op student (2 days at school, 3 days at work) at Permigo, an online driving school.
 
 This is my personal blog where I will share with you my experience as a front-end developer, but you can learn more about me on [my website](www.nicolasthy.com).
