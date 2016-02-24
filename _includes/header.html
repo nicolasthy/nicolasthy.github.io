@@ -1,6 +1,6 @@
-<header class="c-page__header">
+<header class="c-page__header" itemscope itemtype="http://schema.org/Person">
     {% if page.title == 'Home' %}
-        <div class="site-author">{{ site.author }}</div>
+        <div class="site-author" itemprop="name">{{ site.author }}</div>
         <h1 class="site-description">{{ site.description }}</h1>
     {% endif %}
     <p>
