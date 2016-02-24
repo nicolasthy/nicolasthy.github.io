@@ -56,3 +56,10 @@ sitemap:
     border-radius: 150px;
   }
 }
+
+@media screen and (max-width: 768px){
+  .n-about-profile-picture{
+    float: none;
+    margin: 5px auto 35px auto;
+  }
+}
