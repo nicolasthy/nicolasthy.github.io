@@ -1,7 +1,7 @@
 # Site settings
 title: Nicolas Thiry
 description: >
-    Blog
+    Hi, my name is Nicolas and I am a front-developer. This is my blog where you can read about everything I am working on.
 author: Nicolas Thiry
 email: n.thiry92@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -1,8 +1,10 @@
 <header class="c-page__header">
     {% if page.title == 'Home' %}
-        <h1>{{ site.description }}</h1>
+        <div class="site-author">{{ site.author }}</div>
+        <h1 class="site-description">{{ site.description }}</h1>
     {% endif %}
     <p>
-        <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span class="u-seperate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a><span class="u-seperate"></span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+        <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span class="u-seperate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
+        <!-- <span class="u-seperate"></span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> -->
     </p>
 </header>
