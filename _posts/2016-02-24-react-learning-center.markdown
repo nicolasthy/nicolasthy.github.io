@@ -4,6 +4,7 @@ title:  "ReactJS Learning Center"
 date:   2016-02-24 10:00:00 -0500
 categories: resources react.js
 tags: resources react.js redux rails
+image: react-learning-center.png
 excerpt: ReactJS is an awesome Javascript library created by Facebook. Here is a list of resources you might want to check out !
 ---
 _TLDR_: **ReactJS** is a Javascript library which is awesome ! [Here is a list of resources](#reactjs) you might want to check out !
