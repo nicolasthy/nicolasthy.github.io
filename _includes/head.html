@@ -7,11 +7,11 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <!-- <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" /> -->
+    <meta property="og:url" content="http://www.nicolasthy.xyz{{ page.url }}" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <!-- <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" /> -->
+    <meta property="og:image" content="{% if page.image %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ page.image }}{% else %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ site.image }}{% endif %}" />
 
     <meta name="google-site-verification" content="N7KxfwtjiqYSpxwEmpTRAyu7pFV4-eoeBFFcuyRTvto" />
     <meta name="google-site-verification" content="RC4UYhs5QDlsuZOQIfLrpat6kClDgHzNETz1ob4aT_Q" />
