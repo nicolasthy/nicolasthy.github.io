@@ -37,10 +37,22 @@ sitemap:
   font-size: 1.8rem!important;
   color: rgba(#163541, 0.6)!important;
 }
+.c-article__main{
+  overflow: hidden;
+}
 
 .n-similar-posts{
   h4{
     font-size: 2rem;
     margin: 10rem 0 10px 0;
+  }
+}
+
+.n-about-profile-picture{
+  float: left;
+  width: 150px;
+  margin: 10px 25px 10px 0;
+  img{
+    border-radius: 150px;
   }
 }
