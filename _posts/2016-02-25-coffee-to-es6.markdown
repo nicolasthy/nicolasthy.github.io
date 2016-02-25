@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Coffeescript to ES6"
-date:   2016-02-25 04:00:00 -0500
+date:   2016-02-25 08:00:00 -0500
 categories: blog coffeescript es6 react
 tags: blog coffeescript es6 react
 image: react-learning-center.png
