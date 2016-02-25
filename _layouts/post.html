@@ -40,5 +40,8 @@ layout: page
               </ul>
           {% endif %}
         </div>
+        {% if page.comments %}
+          {% include disqus.html %}
+        {% endif %}
     </footer>
 </article>
