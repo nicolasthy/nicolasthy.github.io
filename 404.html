@@ -1,1 +1,89 @@
-Oups
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Language" content="en" />
+
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+        <meta property="og:url" content="http://www.nicolasthy.xyz{{ page.url }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="{{ site.title }}" />
+        <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+        <meta property="og:image" content="{% if page.image %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ page.image }}{% else %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ site.image }}{% endif %}" />
+
+        <meta name="google-site-verification" content="N7KxfwtjiqYSpxwEmpTRAyu7pFV4-eoeBFFcuyRTvto" />
+        <meta name="google-site-verification" content="RC4UYhs5QDlsuZOQIfLrpat6kClDgHzNETz1ob4aT_Q" />
+        <meta name="Publisher" content="Nicolas Thiry" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="alternate" href="http://www.nicolasthy.xyz/" hreflang="en" />
+
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+        <style>
+        .error {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .error-code {
+          bottom: 60%;
+          color: #2d353c;
+          font-size: 96px;
+          line-height: 100px;
+        }
+
+        .error-desc {
+          font-size: 12px;
+          color: #647788;
+        }
+
+        .m-b-10 {
+          margin-bottom: 10px!important;
+        }
+
+        .m-b-20 {
+          margin-bottom: 20px!important;
+        }
+
+        .m-t-20 {
+          margin-top: 20px!important;
+        }
+        </style>
+    </head>
+
+    <body>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-74253025-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+        <div class="error">
+            <div class="error-code m-b-10 m-t-20">404 <i class="fa fa-warning"></i></div>
+            <h3 class="font-bold">We couldn't find the page..</h3>
+
+            <div class="error-desc">
+                Sorry, but the page you are looking for was either not found or does not exist. <br/>
+                Try refreshing the page or click the button below to go back to the Homepage.
+                <div>
+                    <a class=" login-detail-panel-button btn" href="http://www.nicolasthy.xyz/">
+                      <i class="fa fa-arrow-left"></i> Go back to Homepage
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
