@@ -68,6 +68,20 @@ sitemap:
   }
 }
 
+.n-page-title{
+  font-size: 3.2rem!important;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+
+  &.n-tag{
+    &:before {
+        color: $c-base__0;
+        content: '#\2009';
+        padding-right: 2px;
+    }
+  }
+}
+
 @media screen and (max-width: 768px){
   .n-about-profile-picture{
     float: none;
