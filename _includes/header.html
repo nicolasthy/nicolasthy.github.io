@@ -1,7 +1,10 @@
 <header class="c-page__header" itemscope itemtype="http://schema.org/Person">
     {% if page.title == 'Home' %}
-        <div class="site-author" itemprop="name">{{ site.author }}</div>
-        <h1 class="site-description">{{ site.description }}</h1>
+      <h1 class="site-author" itemprop="name">{{ site.author }}</h1>
+      <h2 class="site-description">{{ site.description }}</h2>
+    {% else %}
+      <div class="site-author" itemprop="name">{{ site.author }}</div>
+      <div class="site-description">{{ site.description }}</div>
     {% endif %}
     <p>
         <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span class="u-seperate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
