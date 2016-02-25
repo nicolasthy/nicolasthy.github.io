@@ -4,7 +4,8 @@ title:  "Learning React.js: A step by step course"
 date:   2016-02-26 16:00:00 -0500
 categories: tutorial react
 tags: react redux webpack browserify nodejs tutorial
-image: react-learning-center.png
+image: learning-react-getting-started.png
+cover: learning-react-getting-started.png
 excerpt: Learn ReactJS step by step for all levels.
 comments: true
 listed: true
@@ -13,10 +14,9 @@ Hi, I've been talking a lot of me lately and I thought it was time for me to sha
 
 
 ## Summary
-* [Part 1: Setup]({{site.baseurl}}/learning-reactjs-part-1/)
-* Part 2: Understanding state vs props
-* Part 3: Understanding state vs props
+* [Part 1: What is React?]({{site.baseurl}}/learning-reactjs-part-1/)
+* [Part 2: State vs Props]({{site.baseurl}}/learning-reactjs-part-2/)
+* Part 3: Setting up React
 * Part 4: Writing your first component
 * Part 5: Component Lifecycle
 * Part 6: Components Nesting
-* Part 7:

@@ -88,6 +88,16 @@ sitemap:
   margin-bottom: 2.5rem;
 }
 
+.n-article-cover{
+  margin: -25px 0 35px 0;
+}
+.n-next-prev{
+  font-size: 1.6rem !important;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  color: rgba(#163541, 0.6);
+}
+
 @media screen and (max-width: 768px){
   .n-about-profile-picture{
     float: none;
