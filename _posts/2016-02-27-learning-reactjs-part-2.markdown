@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning React.js: Part 2 - State vs Props"
-date:   2016-02-26 16:00:00 -0500
+date:   2016-02-27 16:00:00 +0100
 categories: tutorial react
 tags: react redux webpack browserify nodejs tutorial
 image: react-learning-center.png

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ReactJS Learning Center"
-date:   2016-02-24 10:00:00 -0500
+date:   2016-02-24 10:00:00 +0100
 categories: resources react
 tags: resources react redux rails
 image: react-learning-center.png
