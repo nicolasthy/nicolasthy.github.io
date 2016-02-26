@@ -1,2 +1,4 @@
 User-Agent: *
-Disallow:
+Allow: /
+
+Sitemap: http://www.nicolasthy.xyz/sitemap.xml
