@@ -3,6 +3,9 @@ layout: page
 ---
 <article class="c-article">
     <header class="c-article__header">
+        {% if page.cover %}
+          <img src="{{site.baseurl}}/images/{{page.cover}}" alt="{{page.title}}" class="n-article-cover" />
+        {% endif %}
         <h1 class="c-article__title">{{ page.title }}</h1>
         <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
         <div class="n-article-categories">
@@ -24,6 +27,17 @@ layout: page
           {% for tag in page.tags %}
             <span class="c-tag"><a href="/tags/{{ tag }}/">{{ tag }}</a></span>
           {% endfor %}
+        </p>
+        <p class="n-next-prev">
+          {% if page.prevpost %}
+            <a href="{{site.baseurl}}/{{page.prevpost}}"><i class="fa fa-angle-left"></i> previous</a>
+          {% endif %}
+          {% if page.prevpost and page.nextpost %}
+          &nbsp;|&nbsp;
+          {% endif %}
+          {% if page.nextpost %}
+            <a href="{{site.baseurl}}/{{page.nextpost}}">next <i class="fa fa-angle-right"></i></a>
+          {% endif %}
         </p>
         <div class="n-similar-posts">
           {% assign hasSimilar = '' %}
