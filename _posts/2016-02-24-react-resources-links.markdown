@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ReactJS Learning Center"
+title:  "React.js Helpful links"
 date:   2016-02-24 10:00:00 +0100
 categories: resources react
 tags: resources react redux rails
