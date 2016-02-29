@@ -15,7 +15,7 @@ Hi, I've been talking a lot of me lately and I thought it was time for me to sha
 
 ## Summary
 * [Part 1: What is React?]({{site.baseurl}}/learning-reactjs-part-1/)
-* Part 2: State vs Props
+* [Part 2: State vs Props]({{site.baseurl}}/learning-reactjs-part-2/)
 * Part 3: Setting up React
 * Part 4: Writing your first component
 * Part 5: Component Lifecycle
