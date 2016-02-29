@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning React.js: Part 2 - State vs Props"
-date:   2016-03-02 16:00:00 +0100
+date:   2016-02-29 16:00:00 +0100
 categories: tutorial react
 tags: react redux webpack browserify nodejs tutorial
 image: react-learning-center.png
@@ -61,4 +61,11 @@ I think this might be enough regarding the state in React, it might not be enoug
 
 So from here we can say that the state of a component can be updated through time when the user triggers an event.
 
-Props are the "opposite" of state. It should not, and won't update.
+Props are the "opposite" of state. It should not, and won't update. However you may pass props from a component to it's children and then pass these props to the state of the new component.
+
+That's it for me, understanding props and state in React is fundamental and I invite you to read these other sources in case my explanations didn't help you at all:
+
+
+* [props vs state – Github](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
+* [Thinking in React – Facebook](https://facebook.github.io/react/docs/thinking-in-react.html)
+* [What is the difference between state and props – stackoverflow](http://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react)

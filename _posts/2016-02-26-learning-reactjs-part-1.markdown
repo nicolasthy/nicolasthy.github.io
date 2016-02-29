@@ -8,6 +8,7 @@ image: react-learning-center.png
 excerpt: Learn ReactJS step by step for all levels. This is step 1 on this course where I will try to explain to you what React is and when you should use it.
 comments: true
 listed: false
+nextpost: learning-reactjs-part-2
 ---
 _**Prelude:**_ This article is part of a series of lessons about React.js, you can find all of them [here]({{site.baseurl}}/learning-reactjs/) !
 
