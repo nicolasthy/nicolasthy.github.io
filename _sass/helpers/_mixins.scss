@@ -68,6 +68,8 @@
 @mixin fs--code {
     font-size: 1.4rem;
     line-height: 1.5;
+    word-wrap: break-word;
+    padding: 10px;
 }
 
 // Visually hide content
