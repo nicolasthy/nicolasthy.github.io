@@ -14,7 +14,7 @@ featured: true
 Hi, I've decided to show you how I installed my dev environment on my Mac before starting Part 3 of my React course so that you can follow my instructions easily in case you are not familiar with the dev tools.
 
 # Mac Dev Setup
-_Current version El Capitan 10.11 (last update: 16 oct. 2015)_
+_Current version El Capitan 10.11 (last update: 01 mar. 2016)_
 
 ## Development environment
 
@@ -62,9 +62,9 @@ I have listed Atom and Sublime here, but you can choose the one your prefer. I p
   * [Homebrew](http://brew.sh/)
   * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
 * [Atom](https://atom.io/)
-  * tool-bar
-  * tool-bar-main
-  * atom-material-ui
+  * file-icons
+  * language-babel
+  * nuclide
 * [Sublime Text 3](http://www.sublimetext.com/3)
   * Better CoffeeScript
   * Emmet
