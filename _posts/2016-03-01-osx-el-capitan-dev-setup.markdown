@@ -59,8 +59,8 @@ Now you should be able to run ```ruby -v```and see that the current version is 2
 I have listed Atom and Sublime here, but you can choose the one your prefer. I personally use Atom but I tend to switch from time to time.
 
 * [iTerm2](http://iterm2.com/)
-  * [Homebrew](http://brew.sh/)
-  * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
+  * [Homebrew](http://brew.sh/) _(OSX Package manager)_
+  * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) __(*Optional* Shortcuts for git commands and other stuff)__
 * [Atom](https://atom.io/)
   * file-icons
   * language-babel
@@ -78,9 +78,9 @@ I have listed Atom and Sublime here, but you can choose the one your prefer. I p
 import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 {% endhighlight %}
 
-* [Sequel Pro](http://www.sequelpro.com/)
+* [Sequel Pro](http://www.sequelpro.com/) __(Database client)__
 * [Photoshop CC](http://www.adobe.com/fr/downloads.html)
-* [f.lux](https://justgetflux.com/)
+* [f.lux](https://justgetflux.com/) __(Screen Night Shift)__
 
 ### Configuration
 **_Setup git username and email_**
