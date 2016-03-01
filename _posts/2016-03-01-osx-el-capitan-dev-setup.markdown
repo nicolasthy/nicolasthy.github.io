@@ -60,7 +60,7 @@ I have listed Atom and Sublime here, but you can choose the one your prefer. I p
 
 * [iTerm2](http://iterm2.com/)
   * [Homebrew](http://brew.sh/) _(OSX Package manager)_
-  * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) _(*Optional* Shortcuts for git commands and other stuff)_
+  * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) _(**Optional** Shortcuts for git commands and other stuff)_
 * [Atom](https://atom.io/)
   * file-icons
   * language-babel
