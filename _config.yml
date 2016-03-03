@@ -5,7 +5,7 @@ description: >
 author: Nicolas Thiry
 email: n.thiry92@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://nicolasthy.xyz" # the base hostname & protocol for your site
+url: "http://www.nicolasthy.xyz" # the base hostname & protocol for your site
 image: nicolas-thiry.jpg
 twitter_username: nicolasthy
 github_username:  nicolasthy
