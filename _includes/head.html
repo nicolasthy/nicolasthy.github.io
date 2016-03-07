@@ -8,7 +8,7 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <meta property="og:url" content="http://www.nicolasthy.xyz{{ page.url }}" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}" />
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:image" content="{% if page.image %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ page.image }}{% else %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ site.image }}{% endif %}" />
@@ -18,7 +18,8 @@
     <meta name="Publisher" content="Nicolas Thiry" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="alternate" href="http://www.nicolasthy.xyz/" hreflang="en" />
+    <link rel="alternate" href="http://www.nicolasthy.xyz{{ page.url }}" hreflang="en" />
+    <link rel="alternate" href="http://www.nicolasthy.xyz{{ page.url }}" hreflang="fr" />
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
@@ -29,6 +30,5 @@
     <script src="{{ "/js/zepto.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>

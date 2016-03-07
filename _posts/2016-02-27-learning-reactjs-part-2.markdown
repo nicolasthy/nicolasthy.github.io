@@ -66,6 +66,6 @@ Props are the "opposite" of state. It should not, and won't update. However you 
 That's it for me, understanding props and state in React is fundamental and I invite you to read these other sources in case my explanations didn't help you at all:
 
 
-* [props vs state – Github](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
-* [Thinking in React – Facebook](https://facebook.github.io/react/docs/thinking-in-react.html)
-* [What is the difference between state and props – stackoverflow](http://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react)
+* [props vs state – Github](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md){:rel="nofollow"}
+* [Thinking in React – Facebook](https://facebook.github.io/react/docs/thinking-in-react.html){:rel="nofollow"}
+* [What is the difference between state and props – stackoverflow](http://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react){:rel="nofollow"}
