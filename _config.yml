@@ -9,6 +9,8 @@ url: "http://nicolasthy.xyz" # the base hostname & protocol for your site
 image: nicolas-thiry.jpg
 twitter_username: nicolasthy
 github_username:  nicolasthy
+dribbble_username:  nicolasthy
+linkedin_username:  nicolasthy
 
 # Build settings
 include: [_pages]

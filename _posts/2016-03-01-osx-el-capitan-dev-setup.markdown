@@ -6,7 +6,7 @@ categories: tutorial osx
 tags: osx elcapitan setup
 image: osx-elcapitan.jpg
 cover: osx-elcapitan.jpg
-excerpt: Setup your Mac with OSX El Capitan for web development
+excerpt: Setup your Mac with OSX El Capitan for web development.
 comments: true
 listed: true
 featured: true
