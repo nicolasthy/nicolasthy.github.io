@@ -39,6 +39,24 @@ pre > code{
         padding: 1.2rem;
     }
 }
+
+@media(max-width: 768px){
+  pre{
+    word-wrap: break-word;
+  }
+  code{
+    padding: 0;
+    > table{
+      width: 200px;
+    }
+  }
+  .code{
+    padding: 0 !important;
+  }
+  .gutter{
+    display: none;
+  }
+}
 span.lineno {
     padding: 1rem;
     border-right: 1px solid #E8E8EB;
