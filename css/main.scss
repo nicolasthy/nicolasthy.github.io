@@ -559,3 +559,42 @@ ul.n-categorie-description{
   font-size: 1.6rem !important;
   margin-top: 10px;
 }
+
+.c-page__footer{
+  position: relative;
+  @media(max-width: 768px){
+    .n-footer-social{
+      display: block;
+      position: relative;
+      margin-top: 30px;
+      margin-left: 5px;
+      width: 100%;
+    }
+  }
+  .n-footer-social-label{
+    position: absolute;
+    top: -14px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+
+  a{
+    color: #5C6E74;
+
+    &.n-twitter:hover{
+      color: #55acee;
+    }
+    &.n-linkedin:hover{
+      color: #007bb5;
+    }
+    &.n-dribbble:hover{
+      color: #ea4c89;
+    }
+    &.n-github:hover{
+      color: #000;
+    }
+    &.n-instagram:hover{
+      color: #517fa4
+    }
+  }
+}

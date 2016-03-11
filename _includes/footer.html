@@ -1,6 +1,31 @@
 <footer class="c-page__footer">
     <p>&copy; {{ site.author }} {{ 'now' | date: '%Y' }}</p>
-    <p>Follow: {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a><span class="u-seperate"></span>{% endif %}{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a><span class="u-seperate"></span><a href="https://dribbble.com/{{ site.dribbble_username }}"><i class="fa fa-dribbble"></i></a><span class="u-seperate"></span><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fa fa-linkedin"></i></a>{% endif %}</p>
+    <p class="n-footer-social">
+      <span class="n-footer-social-label">Follow me</span>
+      {% if site.twitter_username %}
+      <a class="n-twitter" href="https://twitter.com/{{ site.twitter_username }}">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <span class="u-seperate"></span>
+      {% endif %}
+      {% if site.github_username %}
+      <a class="n-github" href="https://github.com/{{ site.github_username }}">
+        <i class="fa fa-github"></i>
+      </a>
+      <span class="u-seperate"></span>
+      <a class="n-dribbble" href="https://dribbble.com/{{ site.dribbble_username }}">
+        <i class="fa fa-dribbble"></i>
+      </a>
+      <span class="u-seperate"></span>
+      <a class="n-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <span class="u-seperate"></span>
+      <a class="n-instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
+        <i class="fa fa-instagram"></i>
+      </a>
+      {% endif %}
+    </p>
 </footer>
 
 <header class="cd-header">
