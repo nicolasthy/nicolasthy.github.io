@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spina: A Ruby on Rails CMS – Part 3"
-date:   2017-03-11 10:00:00 +0100
+date:   2016-03-11 10:00:00 +0100
 categories: tutorial rails
 tags: rails spina
 image: spina.png
@@ -10,7 +10,6 @@ excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by ste
 comments: true
 listed: false
 prevpost: spina-rails-cms-part-2
-published: false
 ---
 Hi, this is Part 3 of a serie of article about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina or [Part 2 - Creating a Spina Theme]({{site.baseurl}}/spina-rails-cms-part-2) !
 
@@ -18,7 +17,7 @@ In this section we will see how to create the views for our freshly created them
 
 ## Creating the Spina Views
 
-We are going to create a blog similar to the one that I currently have. It's done with the [Butane theme created by Alex Carpenter](https://github.com/alexcarpenter/butane-jekyll-theme) with some adjustments that I have done (adding excerpts and covers).
+We are going to create a blog similar to the one that I currently have. It's done with the [Butane theme for Jekyll](https://github.com/alexcarpenter/butane-jekyll-theme) created by [Alex Carpenter](http://alexcarpenter.me/) with some adjustments that I have done (adding excerpts and covers).
 
 This is what you should get at the end.
 
@@ -60,7 +59,7 @@ _homepage.html.haml_
 
 [Here is the list of all the methods you can use to navigate your tree.](https://github.com/stefankroes/ancestry#navigating-your-tree)
 
-To get the full code for this theme you can go and download the sources here _(not yet uploaded)_ !
+To get the full code for this theme you can go and [download the sources here](https://github.com/nicolasthy/Spina-Butane-Theme) !
 
 ### Bonus: Creating a breadcrumb
 

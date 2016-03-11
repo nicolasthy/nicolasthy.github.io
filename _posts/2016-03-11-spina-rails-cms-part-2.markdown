@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spina: A Ruby on Rails CMS – Part 2"
-date:   2017-03-11 10:00:00 +0100
+date:   2016-03-11 10:00:00 +0100
 categories: tutorial rails
 tags: rails spina
 image: spina.png
@@ -11,7 +11,6 @@ comments: true
 listed: false
 prevpost: spina-rails-cms
 nextpost: spina-rails-cms-part-3
-published: false
 ---
 
 Hi, this is Part 2 of a serie of article about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina !

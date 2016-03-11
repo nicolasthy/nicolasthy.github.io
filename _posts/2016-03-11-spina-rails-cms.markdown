@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spina: A Ruby on Rails CMS"
-date:   2017-03-11 10:00:00 +0100
+date:   2016-03-11 10:00:00 +0100
 categories: tutorial rails
 tags: rails spina
 image: spina.png
@@ -11,7 +11,6 @@ comments: true
 listed: true
 featured: true
 nextpost: spina-rails-cms-part-2
-published: false
 ---
 
 Hi, lately I have been working on a different project that no longer requires React — neither Javascript actually. It's a CMS built on Ruby on Rails, a kind of equivalent to Wordpress, called [Spina](http://www.spinacms.com/). It's new, it's open-source, it's ruby on rails and it's awesome !
