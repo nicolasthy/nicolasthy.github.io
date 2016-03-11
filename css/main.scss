@@ -139,11 +139,10 @@ ul.n-categorie-description{
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(2, 23, 37, 0.95);
+  background: transparent;
   height: 50px;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -249,7 +248,20 @@ ul.n-categorie-description{
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: #03263d;
+  background-color: transparent;
+}
+@media(max-width: 768px){
+  .cd-header{
+    min-height: 75px;
+    background: #fff;
+    &.menu-is-open{
+      background: transparent !important;
+    }
+  }
+  .cd-primary-nav-trigger{
+    top: 0px;
+    right: 10px;
+  }
 }
 .cd-primary-nav-trigger .cd-menu-text {
   color: #353535;
