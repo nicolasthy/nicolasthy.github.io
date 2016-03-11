@@ -3,7 +3,7 @@ layout: post
 title:  "Learning React.js: Part 1 - What is React?"
 date:   2016-02-26 11:00:00 +0100
 categories: tutorial react
-tags: react redux webpack browserify nodejs tutorial
+tags: react redux webpack browserify nodejs
 image: react-learning-center.png
 excerpt: Learn ReactJS step by step for all levels. This is step 1 on this course where I will try to explain to you what React is and when you should use it.
 comments: true

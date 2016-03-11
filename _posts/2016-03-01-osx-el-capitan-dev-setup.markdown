@@ -3,7 +3,7 @@ layout: post
 title:  "OSX El Capitan for Web Development"
 date:   2016-03-01 10:00:00 +0100
 categories: tutorial osx
-tags: osx elcapitan setup
+tags: osx elcapitan
 image: osx-elcapitan.jpg
 cover: osx-elcapitan.jpg
 excerpt: Setup your Mac with OSX El Capitan for web development.

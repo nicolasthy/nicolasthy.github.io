@@ -3,7 +3,7 @@ layout: post
 title:  "Learning React.js: A step by step course"
 date:   2016-02-26 10:00:00 +0100
 categories: tutorial react
-tags: react redux webpack browserify nodejs tutorial
+tags: react redux webpack browserify nodejs
 image: learning-react-getting-started.png
 cover: learning-react-getting-started.png
 excerpt: Learn ReactJS step by step for all levels.

@@ -3,7 +3,7 @@ layout: post
 title:  "Learning React.js: Part 2 - State vs Props"
 date:   2016-02-29 16:00:00 +0100
 categories: tutorial react
-tags: react redux webpack browserify nodejs tutorial
+tags: react redux webpack browserify nodejs
 image: react-learning-center.png
 excerpt: Learn ReactJS step by step for all levels. This is step 2 on this course where I will explain you the difference between state and props in React.
 comments: true

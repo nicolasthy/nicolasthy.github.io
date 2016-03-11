@@ -3,7 +3,7 @@ layout: post
 title:  "React.js Helpful links"
 date:   2016-02-24 10:00:00 +0100
 categories: resources react
-tags: resources react redux rails
+tags: react redux
 image: react-learning-center.png
 excerpt: ReactJS is an awesome Javascript library created by Facebook. Here is a list of resources you might want to check out !
 comments: true

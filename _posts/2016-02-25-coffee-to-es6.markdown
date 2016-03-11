@@ -3,7 +3,7 @@ layout: post
 title:  "Coffeescript to ES6"
 date:   2016-02-25 10:00:00 +0100
 categories: blog
-tags: blog coffeescript es6
+tags: coffeescript es6
 image: react-learning-center.png
 excerpt: Why I switched from CoffeeScript to ES6 using ReactJS.
 comments: true

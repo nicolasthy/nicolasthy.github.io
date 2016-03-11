@@ -97,9 +97,14 @@ sitemap:
   color: rgba(22,53,65,0.6) !important;
   margin-bottom: 2.5rem;
 }
+ul.n-categorie-description{
+  > li{
+    margin-bottom: 10px;
+  }
+}
 
 .n-article-cover{
-  margin: -25px 0 35px 0;
+  margin: -25px auto 35px auto;
 }
 .n-next-prev{
   font-size: 1.6rem !important;

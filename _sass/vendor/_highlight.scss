@@ -20,6 +20,9 @@ pre, code {
     @include ff--code;
     @include fs--code;
 }
+pre > code{
+  display: block;
+}
 
 .highlight {
     border-radius: 4px;
