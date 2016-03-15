@@ -21,6 +21,7 @@ sitemap:
 
 // Components
 @import
+    'components/about',
     'components/page',
     'components/article',
     'components/tag',
@@ -580,6 +581,7 @@ ul.n-categorie-description{
 
   a{
     color: #5C6E74;
+    @include transition(.2s, ease-in-out);
 
     &.n-twitter:hover{
       color: #55acee;

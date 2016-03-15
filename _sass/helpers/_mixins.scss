@@ -14,6 +14,13 @@
     }
 }
 
+@mixin transition($duration, $type){
+  transition: $duration $type;
+  -webkit-transition: $duration $type;
+  -moz-transition: $duration $type;
+  -o-transition: $duration $type;
+}
+
 // Font families
 @mixin ff--sans-serif($font-weight: normal) {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;

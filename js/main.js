@@ -20,3 +20,22 @@ $(document).ready(function($){
 		}
 	});
 });
+
+window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFrame
+ || function(f){setTimeout(f, 1000/60)}
+
+function parallaxbubbles(){
+	var resume = document.getElementById('n-resume-frame')
+	var picture = document.getElementById('n-picture')
+ 	var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
+ 	resume.style.marginTop = 65 - scrolltop * .1 + 'px'
+	picture.style.left = 20 - scrolltop * .1 + 'px'
+	picture.style.top = 125 - scrolltop * .1 + 'px'
+}
+
+window.addEventListener('scroll', function(){ // on page scroll
+ requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+}, false)
