@@ -32,7 +32,7 @@ function parallaxbubbles(){
 	var picture = document.getElementById('n-picture')
  	var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
  	resume.style.marginTop = 65 - scrolltop * .1 + 'px'
-	picture.style.left = 20 - scrolltop * .1 + 'px'
+	picture.style.left = -220 - scrolltop * .1 + 'px'
 	picture.style.top = 125 - scrolltop * .1 + 'px'
 }
 

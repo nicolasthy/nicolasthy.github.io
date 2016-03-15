@@ -51,6 +51,7 @@ $n-resume-headings-color: #B7AB8E;
   max-width: 62rem;
   margin: 0 auto;
   padding: 10rem 1rem 5rem 1rem;
+  position: relative;
   .c-article__title{
     margin-top: -50px;
   }
@@ -62,7 +63,7 @@ $n-resume-headings-color: #B7AB8E;
   min-height: 400px;
   position: absolute;
   top: 125px;
-  left: 20px;
+  left: -220px;
   right: 0;
 }
 
@@ -121,7 +122,7 @@ $n-resume-headings-color: #B7AB8E;
   box-shadow: 0 0 20px rgba($c-base__02, 0.4);
   box-sizing: border-box;
   padding: 20px;
-  width: 75%;
+  width: 865px;
   margin: 65px auto 15px auto;
 
   h3{
