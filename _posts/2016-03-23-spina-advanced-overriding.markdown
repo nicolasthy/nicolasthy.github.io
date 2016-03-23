@@ -4,11 +4,12 @@ title:  "Spina Advanced: Overriding"
 date:   2016-03-23 10:00:00 +0100
 categories: tutorial rails
 tags: rails spina
-image: spina.png
+image: spina-advanced.jpg
+cover: spina-advanced.jpg
 excerpt: Going further with Spina and trying to override it's default behavior to fits our needs.
 comments: true
 listed: true
-published: false
+featured: true
 ---
 
 Hi, previously we saw [how to install and set up our own theme on Spina]({{site.baseurl}}/spina-rails-cms/). However it just didn't feel like I had a full control of my content and felt the need to override the default behavior of the CMS.
