@@ -2,7 +2,7 @@
 layout: post
 title:  "Spina: A Ruby on Rails CMS"
 date:   2016-03-11 10:00:00 +0100
-categories: tutorial rails
+categories: tutorial rails spina
 tags: rails spina
 image: spina.png
 cover: spina.png

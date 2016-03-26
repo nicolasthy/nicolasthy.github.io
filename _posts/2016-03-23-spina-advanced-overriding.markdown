@@ -2,7 +2,7 @@
 layout: post
 title:  "Spina Advanced: Overriding"
 date:   2016-03-23 10:00:00 +0100
-categories: tutorial rails
+categories: tutorial rails spina
 tags: rails spina
 image: spina-advanced.jpg
 cover: spina-advanced.jpg
