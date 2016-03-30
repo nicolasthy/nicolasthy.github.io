@@ -13,7 +13,7 @@ prevpost: spina-rails-cms
 nextpost: spina-rails-cms-part-3
 ---
 
-Hi, this is Part 2 of a serie of article about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina !
+Hi, this is Part 2 of a serie of articles about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina and want to get started with it !
 
 In this section we will see how to configure our Spina app to create our own theme with it's different page templates ! Let's build a blog !!
 
