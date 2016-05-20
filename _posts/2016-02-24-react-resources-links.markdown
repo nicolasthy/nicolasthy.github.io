@@ -8,6 +8,7 @@ image: react-learning-center.png
 excerpt: ReactJS is an awesome Javascript library created by Facebook. Here is a list of resources you might want to check out !
 comments: true
 listed: true
+published: true
 redirect_from: "/2016/02/react-learning-center"
 ---
 _TLDR_: **ReactJS** is a Javascript library which is awesome ! [Here is a list of resources](#reactjs) you might want to check out !

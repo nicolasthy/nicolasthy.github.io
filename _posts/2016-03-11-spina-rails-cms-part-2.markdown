@@ -9,6 +9,7 @@ cover: spina.png
 excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step guide to get started with it.
 comments: true
 listed: false
+published: true
 prevpost: spina-rails-cms
 nextpost: spina-rails-cms-part-3
 ---

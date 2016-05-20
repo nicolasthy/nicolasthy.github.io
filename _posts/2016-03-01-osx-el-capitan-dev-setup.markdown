@@ -9,6 +9,7 @@ cover: osx-elcapitan.jpg
 excerpt: Setup your Mac with OSX El Capitan for web development.
 comments: true
 listed: true
+published: true
 featured: true
 ---
 Hi, I've decided to show you how I installed my dev environment on my Mac before starting Part 3 of my React course so that you can follow my instructions easily in case you are not familiar with the dev tools.

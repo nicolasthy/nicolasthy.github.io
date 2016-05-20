@@ -10,6 +10,7 @@ excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by ste
 comments: true
 listed: true
 featured: true
+published: true
 nextpost: spina-rails-cms-part-2
 ---
 
