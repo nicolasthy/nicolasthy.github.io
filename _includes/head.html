@@ -13,6 +13,7 @@
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:image" content="{% if page.image %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ page.image }}{% else %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ site.image }}{% endif %}" />
 
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@nicolasthy" />
     <meta name="twitter:title" content="{{ site.title }}" />
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
