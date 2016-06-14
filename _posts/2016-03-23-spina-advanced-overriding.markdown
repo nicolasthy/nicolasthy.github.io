@@ -10,7 +10,7 @@ excerpt: Going further with Spina and trying to override it's default behavior t
 comments: true
 listed: true
 published: true
-featured: true
+featured: false
 ---
 
 Hi, previously we saw [how to install and set up our own theme on Spina]({{site.baseurl}}/spina-rails-cms/). However it just didn't feel like I had a full control of my content and felt the need to override the default behavior of the CMS.

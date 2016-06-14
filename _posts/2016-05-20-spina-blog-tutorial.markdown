@@ -8,9 +8,9 @@ image: spina-blog.jpg
 cover: spina-blog.jpg
 excerpt: Implementing an existing Spina plugin to create a blog.
 comments: true
-listed: false
-published: false
-featured: false
+listed: true
+published: true
+featured: true
 ---
 
 Hi, I've been very busy lately trying to explore new stuff and I realized it was time to share some of my discoveries. Some of you may want me to write more articles about React but to be honest I've been mainly working on Spina and there is so much to do on it, really enjoying everything about it !
@@ -18,6 +18,10 @@ Hi, I've been very busy lately trying to explore new stuff and I realized it was
 Therefore I'll be starting a project with you guys: Building a blog ! This will allow me to see if the final result could be a viable solution for my own blog. I'll be learning everything on the go, so as soon as I've managed to achieve something I'll share it with you.
 
 In this article we will take a look at [Bram Jetten's Spina Blog Plugin](https://github.com/Bramjetten/Spina-Blog-Example). I also assume that you have read my previous articles about Spina or at least have a working project with Spina, you can [follow these steps to be up to date]({{site.baseurl}}/spina-rails-cms/) !
+
+<div class="alert alert-warning">
+Please check your Spina gem version, it needs to be <b>0.9.0</b> or higher to be able to install the blog plugin !
+</div>
 
 So let's get started !!
 
@@ -49,3 +53,49 @@ You have now succesfully installed the blog plugin ! Now if you head to your adm
 ![Spina Blog Plugin]({{site.baseurl}}/images/blog-admin-plugin.png "Spina Blog Plugin")
 
 ## Setting up the views
+
+I'm going to build something different than my current blog to be able to completely use the plugin's functionalities. Therefore I'll be using the `/blog` path to display all the blogposts and the `/` path to display a simple landing page.
+
+First of all let's create the correct views by overriding the plugin. We need two new files:
+
+  * `/app/views/blogposts/index.html.haml`
+  * `/app/views/blogposts/show.html.haml`
+
+The controllers already exist and return the correct data, we just have to retrieve them in the new views:
+
+`index.html.haml`
+{% highlight haml %}
+%ul
+  - @blogposts.all.each do |blog|
+    %li= link_to blog.title, blog.materialized_path
+{% endhighlight %}
+
+
+`show.html.haml`
+{% highlight haml %}
+%h1= @blogpost.title
+= @blogpost.content.try(:html_safe)
+{% endhighlight %}
+
+Unfortunately if you try to access these pages on the `/blog` path, it would not be working.
+The fix is to add a `custom_page` in your theme for your Blog to be able to add it in the menu and for it to get your theme application layout.
+
+{% highlight ruby %}
+theme.custom_pages = [{
+  name:           'homepage',
+  title:          'Homepage',
+  deletable:      false,
+  view_template:  'homepage'
+},
+{
+  name: 'blog',
+  title: 'Blog',
+  deletable: false,
+  view_template: 'homepage'
+}]
+{% endhighlight %}
+
+Now try accessing your http://localhost:3000/ . You should now see a new item in your Navigation: "Blog". Awesome your blog is up and running !!
+
+The last step is to style your new app. Sadly I won't do a step by step for this part, you're on your own ! :)
+However let me know if you would be interested by having a styling tutorial for your Spina Blog app on Twitter ([@nicolasthy](http://twitter.com/home?status=@nicolasthy)) or in the comments bellow.
