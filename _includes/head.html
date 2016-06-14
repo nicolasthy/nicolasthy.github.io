@@ -13,6 +13,11 @@
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:image" content="{% if page.image %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ page.image }}{% else %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ site.image }}{% endif %}" />
 
+    <meta name="twitter:site" content="@nicolasthy" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:image" content="{% if page.image %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ page.image }}{% else %}http://www.nicolasthy.xyz{{ page.baseurl }}/images/{{ site.image }}{% endif %}" />
+
     <meta name="google-site-verification" content="N7KxfwtjiqYSpxwEmpTRAyu7pFV4-eoeBFFcuyRTvto" />
     <meta name="google-site-verification" content="RC4UYhs5QDlsuZOQIfLrpat6kClDgHzNETz1ob4aT_Q" />
     <meta name="Publisher" content="Nicolas Thiry" />
