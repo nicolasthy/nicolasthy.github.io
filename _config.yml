@@ -14,7 +14,7 @@ description: 'Hi, my name is Nicolas Thiry and I am a front-developer. This is m
 '
 author: Nicolas Thiry
 email: n.thiry92@gmail.com
-baseurl: ''
+baseurl: 
 url: http://www.nicolasthy.xyz
 image: nicolas-thiry.jpg
 twitter_username: nicolasthy
