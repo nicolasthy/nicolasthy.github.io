@@ -8,7 +8,6 @@ categories:
 tags:
 - rails
 - spina
-layout: post
 image: spina.png
 cover: spina.png
 excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step
@@ -17,6 +16,7 @@ comments: true
 listed: true
 featured: true
 nextpost: spina-rails-cms-part-2
+layout: post
 ---
 
 Hi, lately I have been working on a different project that no longer requires React — neither Javascript actually. It's a CMS built on Ruby on Rails, a kind of equivalent to Wordpress, called [Spina](http://www.spinacms.com/). It's new, it's open-source, it's ruby on rails and it's awesome !
@@ -41,6 +41,7 @@ Then simply add these lines to your `Gemfile`
 gem 'spina-template'
 gem 'spina'
 {% endhighlight %}
+Don't forget to `bundle install` !
 
 And finally run the installation with the following command in your terminal and answer to the different questions that the command line asks you.
 {% highlight ruby %}
