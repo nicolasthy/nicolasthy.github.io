@@ -1,15 +1,18 @@
 ---
+title: Coffeescript to ES6
+date: 2016-02-25 09:00:00 Z
+categories:
+- blog
+tags:
+- coffeescript
+- es6
 layout: post
-title:  "Coffeescript to ES6"
-date:   2016-02-25 10:00:00 +0100
-categories: blog
-tags: coffeescript es6
 image: react-learning-center.png
 excerpt: Why I switched from CoffeeScript to ES6 using ReactJS.
 comments: true
-published: true
 listed: true
 ---
+
 _TLDR_: **CoffeeScript** is good, but in my opinion, it isn't the right choice for **ReactJS**. It is easier to go with ES6 if you want to work on both Rails and non-Rails apps.
 
 

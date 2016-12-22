@@ -1,17 +1,21 @@
 ---
+title: OSX El Capitan for Web Development
+date: 2016-03-01 09:00:00 Z
+categories:
+- tutorial
+- osx
+tags:
+- osx
+- elcapitan
 layout: post
-title:  "OSX El Capitan for Web Development"
-date:   2016-03-01 10:00:00 +0100
-categories: tutorial osx
-tags: osx elcapitan
 image: osx-elcapitan.jpg
 cover: osx-elcapitan.jpg
 excerpt: Setup your Mac with OSX El Capitan for web development.
 comments: true
 listed: true
-published: true
 featured: true
 ---
+
 Hi, I've decided to show you how I installed my dev environment on my Mac before starting Part 3 of my React course so that you can follow my instructions easily in case you are not familiar with the dev tools.
 
 # Mac Dev Setup

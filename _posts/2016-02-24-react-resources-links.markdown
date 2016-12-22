@@ -1,16 +1,21 @@
 ---
+title: React.js Helpful links
+date: 2016-02-24 09:00:00 Z
+categories:
+- resources
+- react
+tags:
+- react
+- redux
 layout: post
-title:  "React.js Helpful links"
-date:   2016-02-24 10:00:00 +0100
-categories: resources react
-tags: react redux
 image: react-learning-center.png
-excerpt: ReactJS is an awesome Javascript library created by Facebook. Here is a list of resources you might want to check out !
+excerpt: ReactJS is an awesome Javascript library created by Facebook. Here is a list
+  of resources you might want to check out !
 comments: true
 listed: true
-published: true
 redirect_from: "/2016/02/react-learning-center"
 ---
+
 _TLDR_: **ReactJS** is a Javascript library which is awesome ! [Here is a list of resources](#reactjs) you might want to check out !
 
 Hi, as I said in my presentation post, I will be talking about my personal experiences as a front-end developer.

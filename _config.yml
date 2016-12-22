@@ -1,23 +1,32 @@
-# Site settings
+---
 title: Nicolas Thiry
-description: >
-    Hi, my name is Nicolas Thiry and I am a front-developer. This is my blog where you can read about everything I am working on.
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: 'Hi, my name is Nicolas Thiry and I am a front-developer. This is my
+  blog where you can read about everything I am working on.
+
+'
 author: Nicolas Thiry
 email: n.thiry92@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.nicolasthy.xyz" # the base hostname & protocol for your site
+baseurl: ''
+url: http://www.nicolasthy.xyz
 image: nicolas-thiry.jpg
 twitter_username: nicolasthy
-github_username:  nicolasthy
-dribbble_username:  nicolasthy
-linkedin_username:  nicolasthy
+github_username: nicolasthy
+dribbble_username: nicolasthy
+linkedin_username: nicolasthy
 instagram_username: nicolasthy
-
-# Build settings
-include: [_pages]
+include:
+- _pages
 markdown: kramdown
-permalink: /:title/
+permalink: "/:title/"
 sass:
-    style: compressed
+  style: compressed
 gems:
-  - jekyll-redirect-from
+- jekyll-redirect-from

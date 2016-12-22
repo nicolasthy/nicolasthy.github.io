@@ -1,15 +1,20 @@
 ---
+title: 'Spina Advanced: Overriding'
+date: 2016-03-23 09:00:00 Z
+categories:
+- tutorial
+- rails
+- spina
+tags:
+- rails
+- spina
 layout: post
-title:  "Spina Advanced: Overriding"
-date:   2016-03-23 10:00:00 +0100
-categories: tutorial rails spina
-tags: rails spina
 image: spina-advanced.jpg
 cover: spina-advanced.jpg
-excerpt: Going further with Spina and trying to override it's default behavior to fits our needs.
+excerpt: Going further with Spina and trying to override it's default behavior to
+  fits our needs.
 comments: true
 listed: true
-published: true
 featured: false
 ---
 

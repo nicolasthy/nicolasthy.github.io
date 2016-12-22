@@ -1,16 +1,24 @@
 ---
+title: 'Learning React.js: Part 1 - What is React?'
+date: 2016-02-26 10:00:00 Z
+categories:
+- tutorial
+- react
+tags:
+- react
+- redux
+- webpack
+- browserify
+- nodejs
 layout: post
-title:  "Learning React.js: Part 1 - What is React?"
-date:   2016-02-26 11:00:00 +0100
-categories: tutorial react
-tags: react redux webpack browserify nodejs
 image: react-learning-center.png
-excerpt: Learn ReactJS step by step for all levels. This is step 1 on this course where I will try to explain to you what React is and when you should use it.
+excerpt: Learn ReactJS step by step for all levels. This is step 1 on this course
+  where I will try to explain to you what React is and when you should use it.
 comments: true
 listed: false
-published: true
 nextpost: learning-reactjs-part-2
 ---
+
 _**Prelude:**_ This article is part of a series of lessons about React.js, you can find all of them [here]({{site.baseurl}}/learning-reactjs/) !
 
 Hi, let me explain to you the reasons I have been working with **React** for the past months. If I get the definition from the official docs from Facebook, React is a Javascript Library for building user interfaces. People use React as the V of MVC which abstracts away the DOM from you, giving a simpler programming model and better performance. However I'm not sure it is clear enough for all of you.

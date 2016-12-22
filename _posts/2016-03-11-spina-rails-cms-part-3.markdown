@@ -1,17 +1,23 @@
 ---
+title: 'Spina: A Ruby on Rails CMS – Part 3'
+date: 2016-03-11 09:00:00 Z
+categories:
+- tutorial
+- rails
+- spina
+tags:
+- rails
+- spina
 layout: post
-title:  "Spina: A Ruby on Rails CMS – Part 3"
-date:   2016-03-11 10:00:00 +0100
-categories: tutorial rails spina
-tags: rails spina
 image: spina.png
 cover: spina.png
-excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step guide to get started with it.
+excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step
+  guide to get started with it.
 comments: true
-published: true
 listed: false
 prevpost: spina-rails-cms-part-2
 ---
+
 Hi, this is Part 3 of a serie of article about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina or [Part 2 - Creating a Spina Theme]({{site.baseurl}}/spina-rails-cms-part-2) !
 
 In this section we will see how to create the views for our freshly created theme for our blog !

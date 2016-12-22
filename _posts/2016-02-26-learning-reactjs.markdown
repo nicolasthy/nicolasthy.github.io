@@ -1,17 +1,24 @@
 ---
+title: 'Learning React.js: A step by step course'
+date: 2016-02-26 09:00:00 Z
+categories:
+- tutorial
+- react
+tags:
+- react
+- redux
+- webpack
+- browserify
+- nodejs
 layout: post
-title:  "Learning React.js: A step by step course"
-date:   2016-02-26 10:00:00 +0100
-categories: tutorial react
-tags: react redux webpack browserify nodejs
 image: learning-react-getting-started.png
 cover: learning-react-getting-started.png
 excerpt: Learn ReactJS step by step for all levels.
 comments: true
 listed: true
-published: true
 featured: true
 ---
+
 Hi, I've been talking a lot of me lately and I thought it was time for me to share with you some actual code. This will be the start of a series of posts about React. I will try to teach you how to get started with this library and build you very own ReactJS app.
 
 

@@ -1,15 +1,19 @@
 ---
+title: 'Spina Advanced: Building a blog'
+date: 2016-03-23 09:00:00 Z
+categories:
+- tutorial
+- rails
+- spina
+tags:
+- rails
+- spina
 layout: post
-title:  "Spina Advanced: Building a blog"
-date:   2016-03-23 10:00:00 +0100
-categories: tutorial rails spina
-tags: rails spina
 image: spina-blog.jpg
 cover: spina-blog.jpg
 excerpt: Implementing an existing Spina plugin to create a blog.
 comments: true
 listed: true
-published: true
 featured: true
 ---
 
