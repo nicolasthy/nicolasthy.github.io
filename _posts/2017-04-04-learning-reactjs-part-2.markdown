@@ -18,7 +18,6 @@ comments: true
 listed: false
 prevpost: learning-reactjs
 nextpost: learning-reactjs-part-3
-published: true
 ---
 
 _**Prelude:**_ This article is part of a series of lessons about React.js, you can find all of them [here]({{site.baseurl}}/learning-reactjs/) !

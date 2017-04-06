@@ -16,7 +16,6 @@ excerpt: Going further with Spina and trying to override it's default behavior t
 comments: true
 listed: true
 featured: false
-published: true
 ---
 
 <div class="alert alert-warning">

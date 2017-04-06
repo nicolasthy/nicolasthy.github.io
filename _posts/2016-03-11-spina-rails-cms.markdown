@@ -17,7 +17,6 @@ listed: true
 featured: true
 nextpost: spina-rails-cms-part-2
 layout: post
-published: true
 ---
 
 <div class="alert alert-warning">

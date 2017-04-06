@@ -16,7 +16,6 @@ excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by ste
 comments: true
 listed: false
 prevpost: spina-rails-cms-part-2
-published: true
 ---
 
 <div class="alert alert-warning">
