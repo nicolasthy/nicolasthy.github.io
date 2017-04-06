@@ -15,7 +15,6 @@ excerpt: Implementing an existing Spina plugin to create a blog.
 comments: true
 listed: true
 featured: true
-published: true
 ---
 
 <div class="alert alert-warning">
