@@ -1,8 +1,7 @@
 ---
-title: 'Learning React.js: Part 1 - What is React?'
+title: 'What is React and why I started working with it'
 date: 2016-02-26 10:00:00 Z
 categories:
-- tutorial
 - react
 tags:
 - react
@@ -12,22 +11,19 @@ tags:
 - nodejs
 layout: post
 image: react-learning-center.png
-excerpt: Learn ReactJS step by step for all levels. This is step 1 on this course
-  where I will try to explain to you what React is and when you should use it.
+excerpt: Reasons why I started working with React and the benefits that helped me take this decision.
 comments: true
-listed: false
-nextpost: learning-reactjs-part-2
+listed: true
+published: true
 ---
 
-_**Prelude:**_ This article is part of a series of lessons about React.js, you can find all of them [here]({{site.baseurl}}/learning-reactjs/) !
-
-Hi, let me explain to you the reasons I have been working with **React** for the past months. If I get the definition from the official docs from Facebook, React is a Javascript Library for building user interfaces. People use React as the V of MVC which abstracts away the DOM from you, giving a simpler programming model and better performance. However I'm not sure it is clear enough for all of you.
+Hi, let me explain to you the reasons I have been working with **React** for the past months. If I get the definition from the official docs from Facebook, React is a Javascript Library for building user interfaces. People use React as the V of MVC which abstracts away the DOM from you, giving a simpler programming model and better performance. However I'm not sure if it is clear enough for all of you.
 
 ## Why I chose React.js
 
 When I have been given the chance to choose the library I was going to be using for my project at work I had the option between **Angular**, **React** or an other library (Ember, Backbone, ...). I didn't know any of these, the only thing I was told was "We need a dynamic app and from what we know React is new, it's done by **Facebook** and you don't need to rewrite a full MVC app.". I had already read a little bit of Angular's documentation since a friend of mine was using it at his work and I didn't want to rewrite a full MVC app while we had already a solid Rails app, therefore the choice was easy for me, but it may not be for you.
 
-I am not trying to start a war with all of you Angular lovers, _**it's a great JS library**_. If you are familiar with Angular it might be a good idea trying to learn React and the other way too. I chose React for it's simplicity and it's speed. When I tried to learn Angular I was lost with all the `ng` everywhere ...
+I am not trying to start a war with all of you Angular lovers, _**it's a great JS framework**_. If you are familiar with Angular it might be a good idea trying to learn React and the other way too. I chose React for it's simplicity and it's speed. When I tried to learn Angular I was lost with all the `ng` everywhere ...
 
 ## What makes React.js a good choice
 

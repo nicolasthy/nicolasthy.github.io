@@ -16,7 +16,12 @@ excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by ste
 comments: true
 listed: false
 prevpost: spina-rails-cms-part-2
+published: true
 ---
+
+<div class="alert alert-warning">
+Spina has been updated a lot since I've written these articles. Commands may have changed since and I will do my best to write new articles on Spina soon !
+</div>
 
 Hi, this is Part 3 of a serie of article about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina or [Part 2 - Creating a Spina Theme]({{site.baseurl}}/spina-rails-cms-part-2) !
 

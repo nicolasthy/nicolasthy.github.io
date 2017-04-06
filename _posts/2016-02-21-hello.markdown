@@ -13,6 +13,7 @@ excerpt: Hi, my name is Nicolas Thiry, I am a french student in Lyon at EPSI and
 comments: false
 listed: true
 redirect_from: "/2016/02/hello"
+published: true
 ---
 
 Hi, my name is Nicolas Thiry, I am a french student in Lyon at EPSI and I am currently completing a Master Degree in Computer Science. In addition I am working part time (2 days at school, 3 days at work) at Permigo, an online driving school.

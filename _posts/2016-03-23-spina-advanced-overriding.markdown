@@ -16,7 +16,12 @@ excerpt: Going further with Spina and trying to override it's default behavior t
 comments: true
 listed: true
 featured: false
+published: true
 ---
+
+<div class="alert alert-warning">
+Spina has been updated a lot since I've written these articles. Commands may have changed since and I will do my best to write new articles on Spina soon !
+</div>
 
 Hi, previously we saw [how to install and set up our own theme on Spina]({{site.baseurl}}/spina-rails-cms/). However it just didn't feel like I had a full control of my content and felt the need to override the default behavior of the CMS.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Learning React.js: Part 2 - State vs Props'
-date: 2016-02-29 15:00:00 Z
+title: 'Learning React.js: Part 3 - State vs Props'
+date: 2017-03-20 15:00:00 Z
 categories:
 - tutorial
 - react
@@ -12,11 +12,12 @@ tags:
 - nodejs
 layout: post
 image: react-learning-center.png
-excerpt: Learn ReactJS step by step for all levels. This is step 2 on this course
+excerpt: Learn ReactJS step by step for all levels. This is step 3 on this course
   where I will explain you the difference between state and props in React.
 comments: true
 listed: false
-prevpost: learning-reactjs-part-1
+prevpost: learning-reactjs-part-2
+published: true
 ---
 
 _**Prelude:**_ This article is part of a series of lessons about React.js, you can find all of them [here]({{site.baseurl}}/learning-reactjs/) !

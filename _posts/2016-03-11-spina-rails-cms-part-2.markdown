@@ -17,7 +17,12 @@ comments: true
 listed: false
 prevpost: spina-rails-cms
 nextpost: spina-rails-cms-part-3
+published: true
 ---
+
+<div class="alert alert-warning">
+Spina has been updated a lot since I've written these articles. Commands may have changed since and I will do my best to write new articles on Spina soon !
+</div>
 
 Hi, this is Part 2 of a serie of articles about Spina, you may want to check out [Part 1 - Spina: A Ruby on Rails CMS]({{site.baseurl}}/spina-rails-cms/) first if you are new to Spina and want to get started with it !
 
