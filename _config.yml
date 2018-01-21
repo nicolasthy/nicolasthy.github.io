@@ -28,5 +28,5 @@ markdown: kramdown
 permalink: "/:title/"
 sass:
   style: compressed
-gems:
+plugins:
 - jekyll-redirect-from
