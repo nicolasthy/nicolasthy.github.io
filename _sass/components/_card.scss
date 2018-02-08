@@ -39,6 +39,11 @@
         &_label {
             font-size: 0.9rem;
             text-transform: uppercase;
+
+            &:before {
+                font-family: $font-family-icons;
+                padding-right: 10px;
+            }
         }
 
         &--ruby, &--spina-cms {
@@ -46,6 +51,10 @@
 
             .card_content_label {
                 color: #D95656;
+
+                &:before {
+                    content: '\f3a5';
+                }
             }
         }
 
@@ -54,6 +63,11 @@
 
             .card_content_label {
                 color: #5693D9;
+                
+                &:before {
+                    content: '\f41b';
+                    font-family: $font-family-icons-brand;
+                }
             }
         }
     }
@@ -137,6 +151,7 @@
     display: block;
     display: -webkit-box;
     font-weight: 900;
+    margin-top: 12px;
     overflow: hidden;
     text-decoration: none;
     text-overflow: ellipsis;
