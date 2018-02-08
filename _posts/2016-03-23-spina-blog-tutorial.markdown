@@ -1,10 +1,7 @@
 ---
 title: 'Spina Advanced: Building a blog'
 date: 2016-03-23 09:00:00 Z
-categories:
-- tutorial
-- rails
-- spina
+category: spina cms
 tags:
 - rails
 - spina
@@ -13,8 +10,10 @@ image: spina-blog.jpg
 cover: spina-blog.jpg
 excerpt: Implementing an existing Spina plugin to create a blog.
 comments: true
+
 listed: true
-featured: true
+featured: false
+size: large
 ---
 
 <div class="alert alert-warning">

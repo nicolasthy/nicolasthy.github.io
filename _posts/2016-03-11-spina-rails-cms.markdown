@@ -1,22 +1,21 @@
 ---
 title: 'Spina: A Ruby on Rails CMS'
 date: 2016-03-11 09:00:00 Z
-categories:
-- tutorial
-- rails
-- spina
+category: spina cms
 tags:
 - rails
 - spina
+layout: post
 image: spina.png
 cover: spina.png
 excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step
   guide to get started with it.
-comments: true
-listed: true
-featured: true
 nextpost: spina-rails-cms-part-2
-layout: post
+comments: true
+
+listed: true
+featured: false
+size: small
 ---
 
 <div class="alert alert-warning">

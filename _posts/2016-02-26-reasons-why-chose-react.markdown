@@ -1,8 +1,7 @@
 ---
 title: What is React and why I started working with it
 date: 2016-02-26 10:00:00 Z
-categories:
-- react
+category: react
 tags:
 - react
 - redux
@@ -14,7 +13,10 @@ image: react-learning-center.png
 excerpt: Reasons why I started working with React and the benefits that helped me
   take this decision.
 comments: true
+
 listed: true
+featured: false
+size: small
 ---
 
 Hi, let me explain to you the reasons I have been working with **React** for the past months. If I get the definition from the official docs from Facebook, React is a Javascript Library for building user interfaces. People use React as the V of MVC which abstracts away the DOM from you, giving a simpler programming model and better performance. However I'm not sure if it is clear enough for all of you.

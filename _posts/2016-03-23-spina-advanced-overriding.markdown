@@ -14,8 +14,10 @@ cover: spina-advanced.jpg
 excerpt: Going further with Spina and trying to override it's default behavior to
   fits our needs.
 comments: true
+
 listed: true
 featured: false
+size: small
 ---
 
 <div class="alert alert-warning">

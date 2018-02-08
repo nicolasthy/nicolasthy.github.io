@@ -1,0 +1,9 @@
+﻿.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    &_item {
+        min-height: 554px;
+    }
+}

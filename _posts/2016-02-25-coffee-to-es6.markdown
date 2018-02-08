@@ -10,7 +10,10 @@ layout: post
 image: react-learning-center.png
 excerpt: Why I switched from CoffeeScript to ES6 using ReactJS.
 comments: true
+
 listed: true
+featured: false
+size: small
 ---
 
 _TLDR_: **CoffeeScript** is good, but in my opinion, it isn't the right choice for **ReactJS**. It is easier to go with ES6 if you want to work on both Rails and non-Rails apps.
