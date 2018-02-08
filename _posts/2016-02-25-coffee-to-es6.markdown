@@ -11,7 +11,7 @@ image: react-learning-center.png
 excerpt: Why I switched from CoffeeScript to ES6 using ReactJS.
 comments: true
 
-listed: true
+listed: false
 featured: false
 size: small
 ---

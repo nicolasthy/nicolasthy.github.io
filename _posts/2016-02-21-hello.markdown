@@ -14,7 +14,7 @@ comments: false
 
 redirect_from: "/2016/02/hello"
 
-listed: true
+listed: false
 featured: false
 size: small
 ---

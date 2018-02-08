@@ -1,10 +1,7 @@
 ---
 title: 'Spina Advanced: Overriding'
 date: 2016-03-23 09:00:00 Z
-categories:
-- tutorial
-- rails
-- spina
+category: spina cms
 tags:
 - rails
 - spina

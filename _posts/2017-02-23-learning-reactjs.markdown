@@ -1,9 +1,7 @@
 ---
 title: 'Learning React.js: A step by step course'
 date: 2017-02-23 09:00:00 Z
-categories:
-- tutorial
-- react
+category: react
 tags:
 - react
 - webpack
