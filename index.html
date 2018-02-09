@@ -21,11 +21,14 @@ redirect_from:
     {% assign featured = site.posts | where: "listed", "true" | where: "featured", "true" | limit: 1 %}
     {% for post in featured  %}
         <div class="card-featured">
-            <a href="{{ post.url | prepend: site.baseurl }}"></a>
-            <div class="card-featured_cover" style="background-image: url('https://i0.wp.com/yvettepearson.com/wp-content/uploads/2017/12/startup-593341_1920.jpg?fit=1920%2C1280');"></div>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <div class="card-featured_cover" style="background-image: url('https://i0.wp.com/yvettepearson.com/wp-content/uploads/2017/12/startup-593341_1920.jpg?fit=1920%2C1280');"></div>
+            </a>
             <div class="card-featured_content card_content--{{ post.category | split: ' ' | join: '-' }}">
                 <span class="card_content_label">{{post.category}}</span>
-                <h2 class="card-title card-featured_content_title">{{ post.title }}</h2>
+                <h2 class="card-title card-featured_content_title">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
                 <p class="card-excerpt">{{ post.excerpt }}</p>
                 <p class="card-date">{{ post.date | date: "%b %-d, %Y" }}</p>
             </div>
@@ -39,11 +42,14 @@ redirect_from:
 
     {% for post in posts  %}
         <div class="articles_item card card--{{ post.size }}">
-            <a href="{{ post.url | prepend: site.baseurl }}"></a>
-            <div class="card_cover" style="background-image: url('https://i0.wp.com/yvettepearson.com/wp-content/uploads/2017/12/startup-593341_1920.jpg?fit=1920%2C1280');"></div>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <div class="card_cover" style="background-image: url('https://i0.wp.com/yvettepearson.com/wp-content/uploads/2017/12/startup-593341_1920.jpg?fit=1920%2C1280');"></div>
+            </a>
             <div class="card_content card_content--{{ post.category | split: ' ' | join: '-' }}">
                 <span class="card_content_label">{{post.category}}</span>
-                <h3 class="card-title card_content_title">{{ post.title }}</h3>
+                <h3 class="card-title card_content_title">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h3>
                 <p class="card-excerpt">{{ post.excerpt }}</p>
                 <p class="card-date">{{ post.date | date: "%b %-d, %Y" }}</p>
             </div>

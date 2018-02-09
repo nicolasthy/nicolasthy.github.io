@@ -2,26 +2,27 @@
 layout: page
 ---
 
-<article class="c-article">
-    <header class="c-article__header">
-        {% if page.cover %}
-          <img src="{{site.baseurl}}/images/{{page.cover}}" alt="{{page.title}}" class="n-article-cover" />
-        {% endif %}
-        <h1 class="c-article__title">{{ page.title }}</h1>
-        <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-        <div class="n-article-categories">
-          <i class="fa fa-folder-open"></i>&nbsp;
-          {% for categorie in page.categories %}
-            {% if forloop.last %}
-              <span class="c-categorie"><a href="/categories/{{ categorie }}/">{{ categorie }}</a></span>
-            {% else %}
-              <span class="c-categorie"><a href="/categories/{{ categorie }}/">{{ categorie }}</a>,</span>
-            {% endif %}
-          {% endfor %}
-        </div>
-    </header>
-    <div class="c-article__main">
+<article class="article">
+  <header class="article_header">
+    {% if page.cover %}
+      <img src="{{site.baseurl}}/images/{{page.cover}}" alt="{{page.title}}" class="article_header_cover" />
+    {% endif %}
+
+    <section class="article_content_inner">
+      <h1 class="article_header_title">{{ page.title }}</h1>
+      <!-- <div class="article_header_category article_header_category--{{ page.category | split: ' ' | join: '-' }}">
+        {{ page.category }}
+      </div>
+      <p class="article_header_datetime">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      </p> -->
+    </section>
+  </header>
+
+    <div class="article_content">
+      <section class="article_content_inner">
         {{ content }}
+      </section>
     </div>
     <footer class="c-article__footer">
         <p>

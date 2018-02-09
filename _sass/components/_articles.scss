@@ -7,3 +7,38 @@
         min-height: 554px;
     }
 }
+
+.article {
+    &_header {
+        &_cover {
+            width: 100%;
+            margin: 0 0 50px;
+        }
+
+        &_category {
+            font-size: 0.9rem;
+            margin: 0;
+            text-transform: uppercase;
+
+            &:before { padding-right: 10px; }
+
+            &--spina-cms, &--ruby { @include categoryIcon('ruby'); }
+            &--react { @include categoryIcon('react'); }
+        }
+
+        &_title {
+            display: block;
+            font-size: 2.3rem;
+            font-weight: 700;
+            margin-top: 10px;
+            // text-transform: uppercase;
+        }
+    }
+
+    &_content {
+        &_inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+    }
+}

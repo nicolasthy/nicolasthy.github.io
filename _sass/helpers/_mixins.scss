@@ -32,3 +32,20 @@
     word-wrap: break-word;
     padding: 10px;
 }
+
+@mixin categoryIcon($category) {
+    @if $category == 'ruby' {
+        color: #D95656;
+        &:before { 
+            content: '\f3a5'; 
+            font-family: $font-family-icons;
+        }
+    } @else if $category == 'react' {
+        color: #5693D9;
+    
+        &:before {
+            content: '\f41b';
+            font-family: $font-family-icons-brand;
+        }
+    }
+}

@@ -9,7 +9,7 @@ layout: post
 image: learning-react-getting-started.png
 cover: learning-react-getting-started.png
 excerpt: Learn ReactJS step by step for all levels.
-comments: true
+comments: false
 
 listed: true
 featured: true
