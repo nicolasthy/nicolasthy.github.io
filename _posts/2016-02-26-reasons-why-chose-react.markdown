@@ -9,10 +9,11 @@ tags:
 - browserify
 - nodejs
 layout: post
-image: react-learning-center.png
+cover: what-is-react.jpeg
+image: what-is-react.jpeg
 excerpt: Reasons why I started working with React and the benefits that helped me
   take this decision.
-comments: true
+comments: false
 
 listed: true
 featured: false

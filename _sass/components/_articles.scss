@@ -9,6 +9,13 @@
 }
 
 .article {
+    p, a, li {
+        font-family: $font-family-content;
+        font-size: 1.25rem;
+        font-weight: $font-weight-base;
+        line-height: 33px;
+    }
+
     &_header {
         &_cover {
             width: 100%;
@@ -39,6 +46,26 @@
         &_inner {
             max-width: 720px;
             margin: 0 auto;
+
+            h1, h2, h3, h4, h5, h6 {
+                line-height: 1.04;
+            }
+
+            h1 {
+                margin: 39px 0 0;
+            }
+
+            h2 {
+                margin: 56px 0 0;
+            }
+
+            p {
+                margin: 8px 0 0;
+            }
+
+            img {
+                width: 100%;
+            }
         }
     }
 }

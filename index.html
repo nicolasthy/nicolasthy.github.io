@@ -22,7 +22,7 @@ redirect_from:
     {% for post in featured  %}
         <div class="card-featured">
             <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card-featured_cover" style="background-image: url('https://i0.wp.com/yvettepearson.com/wp-content/uploads/2017/12/startup-593341_1920.jpg?fit=1920%2C1280');"></div>
+                <div class="card-featured_cover" style="background-image: url('{{site.baseurl}}/images/{{post.cover}}');"></div>
             </a>
             <div class="card-featured_content card_content--{{ post.category | split: ' ' | join: '-' }}">
                 <span class="card_content_label">{{post.category}}</span>
@@ -43,7 +43,7 @@ redirect_from:
     {% for post in posts  %}
         <div class="articles_item card card--{{ post.size }}">
             <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card_cover" style="background-image: url('https://i0.wp.com/yvettepearson.com/wp-content/uploads/2017/12/startup-593341_1920.jpg?fit=1920%2C1280');"></div>
+                <div class="card_cover" style="background-image: url('{{site.baseurl}}/images/{{post.cover}}');"></div>
             </a>
             <div class="card_content card_content--{{ post.category | split: ' ' | join: '-' }}">
                 <span class="card_content_label">{{post.category}}</span>
