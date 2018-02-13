@@ -5,7 +5,7 @@ layout: page
 <article class="article">
   <header class="article_header">
     {% if page.cover %}
-      <img src="{{site.baseurl}}/images/{{page.cover}}" alt="{{page.title}}" class="article_header_cover" />
+      <div class="article_header_cover" style="background-image: url('{{site.baseurl}}/images/{{page.cover}}')"></div>
     {% endif %}
 
     <section class="article_content_inner">

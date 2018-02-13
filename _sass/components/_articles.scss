@@ -18,8 +18,11 @@
 
     &_header {
         &_cover {
-            width: 100%;
+            background-position: center center;
+            background-size: cover;
             margin: 0 0 50px;
+            min-height: 625px;
+            width: 100%;
         }
 
         &_category {
@@ -44,27 +47,71 @@
 
     &_content {
         &_inner {
-            max-width: 720px;
-            margin: 0 auto;
 
             h1, h2, h3, h4, h5, h6 {
                 line-height: 1.04;
+                max-width: 720px;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             h1 {
-                margin: 39px 0 0;
+                margin-top: 39px;
             }
 
             h2 {
-                margin: 56px 0 0;
+                margin-top: 56px;
             }
 
             p {
-                margin: 8px 0 0;
+                margin: 8px auto 0;
+                max-width: 720px;
+            }
+
+            figure {
+                margin: 8px auto 0;
+                max-width: 720px;
+            }
+
+            ul {
+                margin: 8px auto 0;
+                max-width: 720px;
             }
 
             img {
                 width: 100%;
+            }
+        }
+
+        &_image {
+            &--small {
+                float: left;
+                width: 40%;
+                margin: 8px 18px;
+            }
+
+            &--cover {
+                margin: 12px auto;
+                max-width: 720px;
+            }
+
+            &--large {
+                margin: 12px auto;
+                max-width: 920px;
+            }
+
+            &--full {
+                margin: 18px auto;
+                max-width: 100%;
+            }
+
+            label {
+                color: #9292A6;
+                display: block;
+                font-size: 0.8rem;
+                text-align: center;
+                margin: 0 0 12px;
             }
         }
     }
