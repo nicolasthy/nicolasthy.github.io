@@ -1,0 +1,80 @@
+﻿.profil {
+    display: flex;
+    min-height: 400px;
+    margin: 40px 0;
+    position: relative;
+    width: 100%;
+
+    &_picture {
+        position: relative;
+
+        &--box {
+            background: #FFF;
+            box-shadow: 0 11px 17px 0 rgba(5,7,26,0.10);
+            max-height: 356px;
+            max-width: 315px;
+            min-height: 356px;
+            min-width: 315px;
+            position: relative;
+            left: -80px;
+            top: -40px;
+            width: 315px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            right: -80px;
+            bottom: -60px;
+        }
+    }
+
+    &_content {
+        text-align: center;
+        width: 100%;
+
+        &_position {
+            color: #D99556;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin: 0 0 -4px;
+            text-transform: uppercase;
+        }
+
+        &_name {
+            font-size: 2.25rem;
+            font-weight: 900;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        &_company {
+            color: #606060;
+            font-size: 0.75rem;
+            font-weight: 300;
+            margin: 10px 0 25px;
+            text-transform: uppercase;
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        &_description {
+            color: #606060;
+            font-size: 0.85rem;
+            margin-top: 20px;
+        }
+
+        &_socials {
+            margin: 25px 0 0;
+
+            a {
+                color: #606060;
+                margin: 0 15px;
+            }
+        }
+    }
+}

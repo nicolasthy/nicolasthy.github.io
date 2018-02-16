@@ -11,7 +11,7 @@ cover: spina-blog.jpg
 excerpt: Implementing an existing Spina plugin to create a blog.
 comments: true
 
-listed: true
+listed: false
 featured: false
 size: large
 ---

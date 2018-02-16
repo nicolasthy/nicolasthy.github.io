@@ -36,6 +36,28 @@ redirect_from:
     {% endfor %}
 </section>
 
+<section class="profil">
+    <figure class="profil_picture">
+        <div class="profil_picture--box">
+            <img src="{{site.baseurl}}/images/nicolas-thiry.png" alt="Nicolas Thiry">
+        </div>
+    </figure>
+    <div class="profil_content">
+        <h4 class="profil_content_position">Frontend Developper</h4>
+        <h1 class="profil_content_name">Nicolas Thiry</h1>
+        <h5 class="profil_content_company">Currently working at <strong>VeryUp</strong></h5>
+        <p class="profil_content_description">Born in France from a german father and a french mother, I have been travelling since then. I had the opportunity to live in Germany, France and many english spoken countries, including the USA, England and Ireland. These allowed me to learn the english language and the culture of each of them in addition to German and French.</p>
+        <p class="profil_content_description">Passionate by the web, I have learned as a self-taught person and in school the tools to be a successful web designer and developer. I am following new trends and eager to learn new technologies and platforms to help me improve my computing skills. My objective is to complete a Master degree in IT to start my professional career in Software Development, preferably linked to the Web environment.</p>
+        <div class="profil_content_socials">
+            <a href="https://www.instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
+            <a href="https://dribbble.com/{{ site.dribbble_username }}"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+        </div>
+    </div>
+</section>
+
 
 <section class="articles">
     {% assign posts = site.posts | where: "listed", "true" | where: "featured", "false" %}

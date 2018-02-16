@@ -11,7 +11,7 @@ cover: learning-react-getting-started.png
 excerpt: Learn ReactJS step by step for all levels.
 comments: false
 
-listed: true
+listed: false
 featured: false
 size: small
 ---

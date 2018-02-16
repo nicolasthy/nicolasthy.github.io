@@ -12,7 +12,7 @@ excerpt: Going further with Spina and trying to override it's default behavior t
   fits our needs.
 comments: true
 
-listed: true
+listed: false
 featured: false
 size: small
 ---
