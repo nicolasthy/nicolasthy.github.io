@@ -13,7 +13,7 @@ cover: what-is-react.jpeg
 image: what-is-react.jpeg
 excerpt: Reasons why I started working with React and the benefits that helped me
   take this decision.
-comments: false
+comments: true
 
 listed: true
 featured: false

@@ -11,6 +11,6 @@ excerpt: 2017 has been a tough year and here is what I've learned since I've sta
 comments: false
 
 listed: true
-featured: true
-size: large
+featured: false
+size: small
 ---

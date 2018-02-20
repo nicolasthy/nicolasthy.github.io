@@ -42,10 +42,16 @@
         }
     } @else if $category == 'react' {
         color: #5693D9;
-    
         &:before {
             content: '\f41b';
             font-family: $font-family-icons-brand;
+        }
+    } @else if $category == 'story' {
+        color: #D99556;
+        &:before {
+            content: '\f10d';
+            font-family: $font-family-icons;
+            font-weight: 900;
         }
     }
 }

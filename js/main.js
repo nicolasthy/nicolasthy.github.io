@@ -1,7 +1,7 @@
 $(document).ready(function($){
 	$(window).scroll(function() {
-		animateFeaturedCard($(window).scrollTop());
-		animateProfil($(window).scrollTop());
+		// animateFeaturedCard($(window).scrollTop());
+		// animateProfil($(window).scrollTop());
 	});
 });
 
