@@ -16,9 +16,26 @@ layout: page
       color: #D95656;
     {% endif %}
   }
+  hr {
+    {% if page.category == 'spina cms' %}
+      background-color: #D95656;
+    {% elsif page.category == 'ruby' %}
+      background-color: #D95656;
+    {% elsif page.category == 'react' %}
+      background-color: #5693D9;
+    {% elsif page.category == 'story' %}
+      background-color: #D99556;
+    {% else %}
+      background-color: #D95656;
+    {% endif %}
+  }
 </style>
 
 <article class="article">
+  <nav id="articleNavbar" class="article_nav">
+    <div class="article_nav_logo"><a href="{{ "/" | prepend: site.baseurl }}"><img id="brand" src="/images/logo-md.png" alt="Nicolas Thiry" title="Nicolas Thiry" /></a></div>
+  </nav>
+
   <header class="article_header">
     {% if page.cover %}
       <div class="article_header_cover" style="background-image: url('{{site.baseurl}}/images/{{page.cover}}')"></div>

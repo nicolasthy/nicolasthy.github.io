@@ -2,6 +2,7 @@ $(document).ready(function($){
 	$(window).scroll(function() {
 		// animateFeaturedCard($(window).scrollTop());
 		// animateProfil($(window).scrollTop());
+		animateArticleNavBar($(window).scrollTop());
 	});
 });
 
@@ -24,4 +25,13 @@ var animateProfil = function(scroll) {
 		profilBox.css('bottom', profilBoxTranslate * 1);
 		image.css('bottom', profilBoxTranslate * 1.5);
 	});
+}
+
+var animateArticleNavBar = function(scroll) {
+	var navbar = $('#articleNavbar');
+	if(scroll >= 525) {
+		navbar.addClass('article_nav--visible');
+	} else {
+		navbar.removeClass('article_nav--visible');
+	}
 }

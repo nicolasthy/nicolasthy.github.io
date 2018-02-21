@@ -17,8 +17,32 @@
     }
 
     hr {
+        border: 0;
+        height: 3px;
         margin: 50px auto;
-        max-width: 300px;
+        max-width: 80px;
+    }
+
+    &_nav {
+        background: #FFF;
+        box-shadow: 0 15px 18px -12px rgba(17,17,17,0.10);
+        margin: 0 auto;
+        padding: 10px;
+        position: fixed;
+        top: 0; right: 0; left: 0;
+        text-align: center;
+        transform: translateY(-300px);
+        transition: 1s ease-in-out;
+        width: 1110px;
+        z-index: 10;
+
+        &--visible {
+            transform: translateY(0);
+        }
+
+        &_logo img {
+            width: 40px;
+        }
     }
 
     &_header {
