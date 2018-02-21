@@ -24,14 +24,15 @@ layout: page
       <div class="article_header_cover" style="background-image: url('{{site.baseurl}}/images/{{page.cover}}')"></div>
     {% endif %}
 
-    <section>
-      <h1 class="article_header_title">{{ page.title }}</h1>
-      <div class="article_header_category article_header_category--{{ page.category | split: ' ' | join: '-' }}">
+    <section class="article_header_content">
+      <h1 class="article_header_content_title">{{ page.title }}</h1>
+      <div class="article_header_content_category article_header_content_category--{{ page.category | split: ' ' | join: '-' }}">
         {{ page.category }}
       </div>
-      <p class="article_header_datetime">
+      <div class="article_header_content_datetime">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      </p>
+      </div>
+      <hr/>
     </section>
 
     {% if page.warning %}

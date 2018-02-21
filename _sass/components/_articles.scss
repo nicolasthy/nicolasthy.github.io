@@ -16,6 +16,11 @@
         line-height: 33px;
     }
 
+    hr {
+        margin: 50px auto;
+        max-width: 300px;
+    }
+
     &_header {
         &_cover {
             background-position: center 70%;
@@ -26,24 +31,44 @@
             width: 100%;
         }
 
-        &_category {
-            font-size: 0.9rem;
-            margin: 0;
-            text-transform: uppercase;
+        &_content {
+            margin: 120px auto 50px;
+            max-width: 820px;
+            text-align: center;
 
-            &:before { padding-right: 10px; }
+            > h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 56px;
+            }
 
-            &--spina-cms, &--ruby { @include categoryIcon('ruby'); }
-            &--react { @include categoryIcon('react'); }
-            &--story { @include categoryIcon('story'); }
-        }
+            &_category, &_datetime {
+                display: inline-block;
+                margin: 0 10px;
+            }
 
-        &_title {
-            display: block;
-            font-size: 2.3rem;
-            font-weight: 700;
-            margin-top: 10px;
-            // text-transform: uppercase;
+            &_category {
+                font-size: 0.9rem;
+                margin: 0;
+                text-transform: uppercase;
+    
+                &:before { padding-right: 10px; }
+    
+                &--spina-cms, &--ruby { @include categoryIcon('ruby'); }
+                &--react { @include categoryIcon('react'); }
+                &--story { @include categoryIcon('story'); }
+            }
+
+            &_datetime {
+                font-size: 0.9rem;
+                font-family: $font-family-content;
+                opacity: 0.7;
+
+                &:before { 
+                    content: "|"; 
+                    margin: 0 10px;
+                }
+            }
         }
     }
 
