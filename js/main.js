@@ -1,4 +1,5 @@
 $(document).ready(function($){
+	initProgressBar();
 	$(window).scroll(function() {
 		// animateFeaturedCard($(window).scrollTop());
 		// animateProfil($(window).scrollTop());
@@ -33,5 +34,45 @@ var animateArticleNavBar = function(scroll) {
 		navbar.addClass('article_nav--visible');
 	} else {
 		navbar.removeClass('article_nav--visible');
+	}
+}
+
+var initProgressBar = function() {
+	if($('#articleNavbar').length > 0) {
+		var progressColor = $('.article_header_content_category').first().css('color');
+		var bar = new ProgressBar.Circle(articleNavbarProgress, {
+			strokeWidth: 5,
+			easing: 'linear',
+			duration: 1400,
+			color: progressColor,
+			trailColor: 'transparent',
+			trailWidth: 2,
+			svgStyle: null
+		});
+		bar.set(0);
+
+		$(window).scroll(function() {
+			animateFixedNavBarLogo($(window).scrollTop(), bar);
+		});
+	}
+} 
+
+var animateFixedNavBarLogo = function(scroll, bar) {
+	if($('#articleNavbar').length > 0) {
+		if($('.article_content').first().offset().top <= scroll) {
+			var articleHeight = $('.article_content').first().height() - $(window).height() + $('.article_footer').first().height() + 80;
+			var readingPosition = scroll - $('.article_content').first().offset().top
+			var readingPositionPercent = (readingPosition * 100) / articleHeight;
+			var readingProgress = (75 * readingPositionPercent) / 100;
+			var readingProgressValue = readingProgress / 100;
+
+			if(readingProgress > 5 ) {
+				$('#articleNavbar').find('.article_nav_logo').addClass('article_nav_logo--progress');
+			} else {
+				$('#articleNavbar').find('.article_nav_logo').removeClass('article_nav_logo--progress');
+			}
+      
+      		bar.set(readingProgressValue);
+		}
 	}
 }

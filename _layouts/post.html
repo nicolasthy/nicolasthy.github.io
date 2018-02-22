@@ -33,7 +33,12 @@ layout: page
 
 <article class="article">
   <nav id="articleNavbar" class="article_nav">
-    <div class="article_nav_logo"><a href="{{ "/" | prepend: site.baseurl }}"><img id="brand" src="/images/logo-md.png" alt="Nicolas Thiry" title="Nicolas Thiry" /></a></div>
+    <div class="article_nav_logo">
+      <a href="{{ "/" | prepend: site.baseurl }}">
+        <div id="articleNavbarProgress" class="article_nav_progress"></div>
+        <img id="brand" src="/images/logo-md.png" alt="Nicolas Thiry" title="Nicolas Thiry" />
+      </a>
+    </div>
   </nav>
 
   <header class="article_header">
@@ -53,9 +58,9 @@ layout: page
     </section>
 
     {% if page.warning %}
-      <section>
+      <div class="alert alert--warning">
           {{ page.warning }}
-      </section>
+      </div>
     {% endif %}
   </header>
 

@@ -27,6 +27,7 @@
         background: #FFF;
         box-shadow: 0 15px 18px -12px rgba(17,17,17,0.10);
         margin: 0 auto;
+        min-height: 70px;
         padding: 10px;
         position: fixed;
         top: 0; right: 0; left: 0;
@@ -38,6 +39,24 @@
 
         &--visible {
             transform: translateY(0);
+        }
+
+        &_logo {
+            &--progress {
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-name: pulse;
+            }
+        }
+
+        &_progress {
+            position: absolute;
+            left: -2px;
+            right: 0;
+            margin: 0 auto;
+            width: 37px;
+            height: 38px;
+            transform: rotate(180deg);
         }
 
         &_logo img {
@@ -117,6 +136,7 @@
             p {
                 margin: 8px auto 0;
                 max-width: 720px;
+                color: rgba(0,0,0,0.75);
             }
 
             > p:first-child:first-letter {
@@ -124,6 +144,7 @@
                 font: 380%/1 $font-family-base;
                 font-weight: 700;
                 margin: -.06em .06em -.2em -.07em;
+                color: rgba(0,0,0,0.85);
             }
 
             figure {
@@ -181,5 +202,20 @@
             background: #F2F2F2;
             padding: 10px 35px 25px;
         }
+    }
+}
+
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
     }
 }

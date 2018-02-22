@@ -14,3 +14,7 @@ listed: true
 featured: true
 size: large
 ---
+
+Codiko is a web and mobile app to train for the driver's license theorical exam in France. It was initialy a project that had to be integrated to the existing online driving school website, PermiGo. However, regarding the size of the app we chose to create a stand-alone app. Therefor we chose to start the project with trending programming tools such as Ruby On Rails 5 (the final release was not yet out) and React.
+
+Our development team on Codiko was pretty small so we had to focus on the web app and let a web agency handle the mobile version (for iOS and Android).
