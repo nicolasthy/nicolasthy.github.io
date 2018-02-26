@@ -14,6 +14,8 @@ comments: true
 listed: false
 featured: false
 size: small
+
+published: false
 ---
 
 _TLDR_: **CoffeeScript** is good, but in my opinion, it isn't the right choice for **ReactJS**. It is easier to go with ES6 if you want to work on both Rails and non-Rails apps.

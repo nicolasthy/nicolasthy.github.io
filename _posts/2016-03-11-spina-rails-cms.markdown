@@ -14,7 +14,7 @@ comments: true
 
 listed: true
 featured: false
-size: small
+size: large
 ---
 
 Hi, lately I have been working on a different project that no longer requires React — neither Javascript actually. It's a CMS built on Ruby on Rails, a kind of equivalent to Wordpress, called [Spina](http://www.spinacms.com/). It's new, it's open-source, it's ruby on rails and it's awesome !

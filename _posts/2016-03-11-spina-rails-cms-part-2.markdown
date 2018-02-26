@@ -18,6 +18,8 @@ nextpost: spina-rails-cms-part-3
 comments: true
 
 listed: false
+
+published: false
 ---
 
 <div class="alert alert-warning">

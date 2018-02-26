@@ -64,16 +64,26 @@ layout: page
     {% endif %}
   </header>
 
-    <div class="article_content">
-      <section class="article_content_inner">
-        {{ content }}
-      </section>
-    </div>
-    <footer class="article_footer">
-      {% if page.comments %}
-        <div class="article_footer_comments">
-          {% include disqus.html %}
+  <div class="article_content">
+    <section class="article_content_inner">
+      {{ content }}
+    </section>
+  </div>
+  <footer class="article_footer">
+    <div class="article_footer_profil">
+      <div class="article_footer_profil_picture" style="background-image: url('{{site.baseurl}}/images/nicolas-thiry.jpg');"></div>
+      <div class="article_footer_profil_infos">
+        <div class="article_footer_profil_infos_name">
+          <a href="#"><strong>Nicolas Thiry</strong></a>
         </div>
-      {% endif %}
-    </footer>
+        <div class="article_footer_profil_infos_position">Front-end Developer at VeryUp</div>
+      </div>
+      <div class="article_footer_profil_follow"></div>
+    </div>
+    {% if page.comments %}
+      <div class="article_footer_comments">
+        {% include disqus.html %}
+      </div>
+    {% endif %}
+  </footer>
 </article>

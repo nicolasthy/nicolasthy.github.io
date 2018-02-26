@@ -10,9 +10,11 @@ cover: car-codiko.jpeg
 excerpt: In 2017 I've worked on my first real case React Native app while working at PermiGo.
 comments: true
 
-listed: true
-featured: true
+listed: false
+featured: false
 size: large
+
+published: false
 ---
 
 Codiko is a web and mobile app to train for the driver's license theorical exam in France. It was initialy a project that had to be integrated to the existing online driving school website, PermiGo. However, regarding the size of the app we chose to create a stand-alone app. Therefor we chose to start the project with trending programming tools such as Ruby On Rails 5 (the final release was not yet out) and React.

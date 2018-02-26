@@ -17,6 +17,8 @@ prevpost: spina-rails-cms-part-2
 comments: true
 
 listed: false
+
+published: false
 ---
 
 <div class="alert alert-warning">

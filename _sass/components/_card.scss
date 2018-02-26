@@ -57,6 +57,10 @@
         width: calc(66.6666% - 50px);
         justify-content: flex-end;
 
+        .card_cover {
+          transform: translateY(0);
+        }
+
         .card_content {
             width: 46%;
 
@@ -85,14 +89,14 @@
 
     &:hover {
         box-shadow: 0 15px 18px -6px rgba(17,17,17,0.30);
-        .card-featured_cover { opacity: 0.9; }
+        .card-featured_cover { opacity: 1; }
         .card-featured_content { border-bottom-width: 5px; }
     }
 
     &_cover {
         background-size: cover;
         background-position: center 70%;
-        opacity: 0.7;
+        opacity: 0.8;
         position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;
         transition: .6s ease-in-out;
@@ -166,15 +170,15 @@
     &_label {
         font-size: 0.9rem;
         text-transform: uppercase;
-    
+
         &:before { padding-right: 10px; }
     }
-    
+
     &--ruby, &--spina-cms {
         border-bottom-color: #D95656;
         .card_content_label { @include categoryIcon('ruby'); }
     }
-    
+
     &--react {
         border-bottom-color: #5693D9;
         .card_content_label { @include categoryIcon('react'); }

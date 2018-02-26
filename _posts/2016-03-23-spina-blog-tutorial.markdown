@@ -14,6 +14,8 @@ comments: true
 listed: false
 featured: false
 size: large
+
+published: false
 ---
 
 <div class="alert alert-warning">
