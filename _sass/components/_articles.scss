@@ -153,11 +153,19 @@
       }
 
       h2 {
-        margin-top: 56px;
+        color: rgba(0,0,0,0.8);
+        font-size: 1.65rem;
+        margin: 56px auto 15px auto;
+      }
+
+      h3 {
+        color: rgba(0,0,0,0.44);
+        font-size: 1.35rem;
+        font-weight: 600;
       }
 
       p {
-        margin: 8px auto 0;
+        margin: 16px auto 0;
         max-width: 720px;
         color: rgba(0,0,0,0.75);
       }
