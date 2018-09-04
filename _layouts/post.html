@@ -52,7 +52,7 @@ layout: page
         {{ page.category }}
       </div>
       <div class="article_header_content_datetime">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+        <time>{{ page.date | date: "%b %-d, %Y" }}</time>
       </div>
       <hr/>
     </section>
@@ -87,3 +87,21 @@ layout: page
     {% endif %}
   </footer>
 </article>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "image": [
+      "http://www.nicolasthy.xyz/images/{{page.cover}}"
+     ],
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Person",
+      "name": "Nicolas Thiry"
+    },
+    },
+    "description": "{{ page.excerpt }}"
+  }
+  </script>

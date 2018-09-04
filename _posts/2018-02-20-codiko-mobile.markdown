@@ -47,6 +47,8 @@ The first draft of the app went surprisingly fast. I did not expect to have a wo
 
 Regarding the UI, we were looking for something very user-friendly. I don't consider myself as a UI/UX expert, so I decided to take existing apps as an example. It had to be easy to use, so why not implement well known user experiences.
 
+![Codiko Native]({{site.baseurl}}/images/codiko-demo.png "Codiko Native")
+
 Facebook, Instagram, iOS apps, Tinder, ..., are apps used almost everyday by the users we were aiming. We tried to combine theses user experiences to enhance Codiko's experience. We achieved to reduce the user's interactions with the app by 2.
 We also removed every component that was not mobile friendly and only adapted to a web format, such as complex graphics. We thought that Apple Health was a great inspiration regarding data visualisation on a small screen and that Tinder's screen navigation was easier regarding the use of swiping instead of taping.
 
