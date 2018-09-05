@@ -78,13 +78,26 @@ layout: page
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "{{ page.title }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.nicolasthy.xyz/{{page.url}}"
+  },
   "image": [
     "http://www.nicolasthy.xyz/images/{{page.cover}}"
   ],
   "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
   "author": {
     "@type": "Person",
     "name": "Nicolas Thiry"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Nicolas Thiry",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.nicolasthy.xyz/images/logo-md.png"
+    }
   },
   "description": "{{ page.excerpt }}"
 }
