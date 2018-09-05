@@ -8,7 +8,7 @@ layout: page
           <img src="{{site.baseurl}}/images/{{page.cover}}" alt="{{page.title}}" class="n-article-cover" />
         {% endif %}
         <h1 class="c-article__title">{{ page.title }}</h1>
-        <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+        <p class="c-article__time"><time>{{ page.date | date: "%b %-d, %Y" }}</time></p>
         <div class="n-article-categories">
           <i class="fa fa-folder-open"></i>&nbsp;
           {% for categorie in page.categories %}
@@ -72,3 +72,21 @@ layout: page
         {% endif %}
     </footer>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "image": [
+    "http://www.nicolasthy.xyz/images/{{page.cover}}"
+    ],
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "Nicolas Thiry"
+  },
+  },
+  "description": "{{ page.excerpt }}"
+}
+</script>
