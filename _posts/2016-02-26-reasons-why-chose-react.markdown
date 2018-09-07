@@ -35,9 +35,9 @@ The concept of **virtual DOM** and the fact that only the updated parts are re-r
 An interesting thing about React is that you have to build an app that is composed of components which are _the smallest possible representative of a group of DOM elements along with its corresponding actions and state_. Therefore you have to decompose your code in multiple components which makes your app really clean and simple to update. Even though this is a common practice in programming, React forces you to work this way in order to achieve your objectives.
 This is how it could look like:
 
-<div class="article_content_image article_content_image--full">
+<div class="article_content_image article_content_image--cover">
   <img src="{{site.baseurl}}/images/react-lifecycle.png" />
-  <label>Caption</label>
+  <label>React props & state</label>
 </div>
 
 Here you can see that when you open an app, it renders a component that may see it's state evolve during time and that this component may render another component as a child. I will continue talking about **states, props and render** in the next section.
