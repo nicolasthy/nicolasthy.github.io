@@ -4,6 +4,7 @@ $(document).ready(function($){
 	$(window).scroll(function() {
 		// animateFeaturedCard($(window).scrollTop());
 		// animateProfil($(window).scrollTop());
+		animateArticleSocial($(window).scrollTop());
 		animateArticleNavBar($(window).scrollTop());
 	});
 });
@@ -27,6 +28,19 @@ var animateProfil = function(scroll) {
 		profilBox.css('bottom', profilBoxTranslate * 1);
 		image.css('bottom', profilBoxTranslate * 1.5);
 	});
+}
+
+var animateArticleSocial = function(scroll) {
+	var socials = $('#articleSocials');
+	if(socials && $(window).width() >= 1020) {
+		var articleContent = $('.article_content').first();
+		var articleContentOffsets = $('.article_content').first().offset();
+		var socialPosition = (scroll - articleContentOffsets.top) + 140;
+		if(socialPosition > (articleContent.height() - 140)) socialPosition = articleContent.height() - 140;
+		if(articleContentOffsets.top <= scroll) socials.css('top', socialPosition);
+	} else if(socials) {
+		socials.css('top', 135);
+	}
 }
 
 var animateArticleNavBar = function(scroll) {

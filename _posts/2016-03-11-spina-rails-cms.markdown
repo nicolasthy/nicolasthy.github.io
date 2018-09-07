@@ -9,12 +9,16 @@ layout: post
 image: spina-sky.jpeg
 cover: spina-sky.jpeg
 excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step guide to get started with it.
-warning: Spina has been updated a lot since I've written these articles. Commands may have changed since and I will do my best to write new articles on Spina soon !
+warning: Spina has been updated a lot since I've written these articles. Commands may have changed since. Let me know if you would be interested in an updated article !
 comments: true
 
 listed: true
 featured: false
 size: large
+
+redirect_from:
+- "/spina-blog-tutorial"
+- "/spina-rails-cms-part-2/"
 ---
 
 Hi, lately I have been working on a different project that no longer requires React — neither Javascript actually. It's a CMS built on Ruby on Rails, a kind of equivalent to Wordpress, called [Spina](http://www.spinacms.com/). It's new, it's open-source, it's ruby on rails and it's awesome !
