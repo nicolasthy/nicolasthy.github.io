@@ -1,6 +1,5 @@
 $(document).ready(function($){
 	initProgressBar();
-	initMenuToggle();
 	$(window).scroll(function() {
 		// animateFeaturedCard($(window).scrollTop());
 		// animateProfil($(window).scrollTop());
@@ -70,24 +69,6 @@ var initProgressBar = function() {
 			animateFixedNavBarLogo($(window).scrollTop(), bar);
 		});
 	}
-} 
-
-var initMenuToggle = function() {
-	var navbar = $('#navigation');
-	var burger = navbar.find('.navbar_menu').first();
-	var sidebar = $('#sidebar');
-	var sidebarMask = sidebar.find('.sidebar_mask').first();
-
-	burger.on('click', function(e) {
-		e.preventDefault();
-		sidebar.addClass('sidebar--opened');
-		$('body').addClass('no-scroll');
-	})
-
-	sidebarMask.on('click', function(e) {
-		sidebar.removeClass('sidebar--opened');
-		$('body').removeClass('no-scroll');
-	});
 }
 
 var animateFixedNavBarLogo = function(scroll, bar) {
