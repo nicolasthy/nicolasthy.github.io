@@ -1,5 +1,13 @@
 ---
-layout: page
+layout: default
 ---
 
-<h1>nineteen</h1>
+<div>
+    <header id="navigation" class="navbar" itemscope itemtype="http://schema.org/Person">
+        <div class="navbar_logo--large"><a href="{{ "/" | prepend: site.baseurl }}"><img id="brand" src="/images/logoxlogo.png" alt="Nicolas Thiry" title="Nicolas Thiry" /></a></div>
+    </header>
+    <div>
+        {{ content }}
+    </div>
+    {% include footer.html %}
+</div>

@@ -9,5 +9,40 @@
             padding: 20px 0 0;
             width: 70px;
         }
+
+        &--large {
+            img {
+                width: 140px;
+            }
+        }
+    }
+
+    &_menu {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        ul {
+            list-style: none;
+
+            > li {
+                padding: 0;
+                margin: 0;
+                display: inline-block;
+
+                &:after {
+                    content: "/";
+                    padding: 0 10px;
+                    opacity: 0.4;
+                }
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
