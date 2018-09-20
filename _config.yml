@@ -23,7 +23,7 @@ dribbble_username: nicolasthy
 linkedin_username: nicolasthy
 instagram_username: nicolasthy
 include:
-- _pages
+  - _pages
 markdown: kramdown
 permalink: "/:title/"
 sass:
