@@ -11,8 +11,8 @@ excerpt: In 2017 I've worked on my first real case React Native app while workin
 comments: true
 
 listed: true
-featured: true
-size: large
+featured: false
+size: small
 
 published: true
 ---

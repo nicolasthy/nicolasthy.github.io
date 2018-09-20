@@ -7,37 +7,42 @@
     &_logo {
         img {
             padding: 20px 0 0;
-            width: 130px;
+            width: 70px;
+        }
+
+        &--large {
+            img {
+                width: 140px;
+            }
         }
     }
 
     &_menu {
         position: absolute;
+        right: 40px;
         top: 50%;
-        left: 0;
         transform: translateY(-50%);
 
-        &:hover {
-            .navbar_menu {
-                &--bar-1 {
-                    transform: translateX(4px);
+        ul {
+            list-style: none;
+
+            > li {
+                padding: 0;
+                margin: 0;
+                display: inline-block;
+
+                &:after {
+                    content: "/";
+                    padding: 0 10px;
+                    opacity: 0.4;
                 }
-                &--bar-2 {
-                    transform: translateX(-4px);
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
                 }
             }
-        }
-
-        &--bar-1, &--bar-2 {
-            transition: .5s ease-in-out;
-            width: 26px;
-            height: 2px;
-            background: $heading-color;
-            margin: 8px;
-        }
-
-        &--bar-2 {
-            margin: 8px 8px 8px 16px;
         }
     }
 }

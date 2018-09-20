@@ -8,10 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: 'Hi, my name is Nicolas Thiry and I am a front-developer. This is my
-  blog where you can read about everything I am working on.
-
-'
+description: "I'm Nicolas Thiry a front-end developer exploring the world of JavaScript & the beauty of React. Currently living in Lyon, France."
 author: Nicolas Thiry
 email: n.thiry92@gmail.com
 baseurl: 
