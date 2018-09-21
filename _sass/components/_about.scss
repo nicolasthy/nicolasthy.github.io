@@ -1,0 +1,184 @@
+﻿.about {
+    &_description {
+        &.row {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &--main {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+        &--alt {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-left: auto;
+        }
+    }
+
+    &_skills {
+        text-align: center;
+
+        > h6 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            width: 95%;
+            margin: 0 auto 40px;
+        }
+
+        > p {
+            width: 750px;
+            margin: auto;
+        }
+
+        &_cards {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 50px auto 110px;
+
+            &_card {
+                background: #FFFFFF;
+                box-shadow: 0 11px 17px 0 rgba(5,7,26,0.10);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 230px;
+                width: 28%;
+                max-width: 225px;
+                transition: .1s ease-in-out;
+
+                &:hover { color: #FFF; }
+
+                > i {
+                    font-size: 2.4rem;
+                    margin: 0 0 30px;
+                }
+
+                > span { font-weight: 500; }
+
+                &--react {
+                    color: #5693D9;
+                    &:hover { background: #5693D9; }
+                }
+
+                &--javascript {
+                    color: #F3D904;
+                    &:hover { background: #F3D904; }
+                }
+
+                &--ruby {
+                    color: #D95656;
+                    &:hover { background: #D95656; }
+                }
+            }
+        }
+    }
+
+    &_experiences {
+        width: 70%;
+        margin: 150px auto 50px;
+
+        &_item {
+            h4 {
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+            }
+
+            h5 {
+                font-size: 1rem;
+                font-weight: 400;
+                margin: 0;
+                padding: 0;
+            }
+
+            span {
+                font-size: 0.8rem;
+                font-weight: 300;
+                opacity: 0.5;
+            }
+
+            ul { margin: 0; }
+
+            &:after {
+                content: '';
+                width: 50%;
+                margin: 40px auto;
+                border-bottom: 1px solid rgba(#979797, 0.3);
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &_socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 90px auto;
+
+        &_item {
+            display: flex;
+            align-content: center;
+            width: 295px;
+            margin: 10px 15px;
+            padding: 25px 30px;
+            border-radius: 7px;
+            transition: .3s ease-in-out;
+
+            i {
+                font-size: 2rem;
+                margin-right: 25px;
+                align-self: center;
+                transition: .1s ease-in-out;
+            }
+
+            h6 {
+                font-size: 1.05rem;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                transition: .1s ease-in-out;
+            }
+
+            span {
+                display: block;
+                font-size: 0.8rem;
+                line-height: 1.2;
+            }
+
+            &--instagram:hover {
+                background: rgba(#c32aa3, 0.1);
+                h6, i { color: #c32aa3; }
+            }
+            &--twitter:hover {
+                background: rgba(#1da1f2, 0.1);
+                h6, i { color: #1da1f2; }
+            }
+            &--github:hover {
+                background: rgba(#24292e, 0.1);
+                h6, i { color: #24292e; }
+            }
+            &--dribbble:hover {
+                background: rgba(#ea4c89, 0.1);
+                h6, i { color: #ea4c89; }
+            }
+            &--spotify:hover {
+                background: rgba(#1ed760, 0.1);
+                h6, i { color: #1ed760; }
+            }
+            &--linkedin:hover {
+                background: rgba(#007bb5, 0.1);
+                h6, i { color: #007bb5; }
+            }
+        }
+    }
+}

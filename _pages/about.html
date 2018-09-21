@@ -10,50 +10,40 @@ redirect_from:
 - "/resumes"
 ---
 
-<section class="about_informations">
-
+<section id="Description" class="row about_description">
+  <div class="col-7 about_description--main">
+    <p>I'm a front-end developer based in Lyon, France. I am devoted to create user-centered applications and to discover and learn as much as I can.</p>
+  </div>
+  <div class="col-4 about_description--alt">
+    <p>Long time traveler, my parents moved around the world (Washington, Palo Alto, London, Dublin, Frankfurt, Paris and Annecy) and I have been used to discover new people, cultures and languages.</p>
+  </div>
 </section>
 
-<section class="about_description">
-  <div>
-    I'm a front-end developer based in Lyon, France. Long time traveler, my parents moved around the world (Washington, Palo Alto, London, Dublin, Frankfurt, Paris and Annecy) and I have been used to discover new people, cultures and languages. I am devoted to create user-centered applications and to discover and learn as much as I can.
-  </div>
-
-  <div class="about_description_hobbies">
-    <div>
-      <h2>Music</h2>
-      <div>I love discovering new music, sharing it and dancing to it. I even created <strong>nineteen</strong> for those reasons.</div>
+<section id="Skills" class="row about_skills">
+  <div class="about_skills_cards">
+    <div id="React" class="about_skills_cards_card about_skills_cards_card--react">
+      <i class="fab fa-react"></i>
+      <span>React</span>
     </div>
-
-    <div>
-      <h2>Sports</h2>
-      <div>I'm a big sports fan, mainly football (soccer). I practice Football, Tennis and Golf but I'm always in for any other sport.</div>
+    <div id="JavaScript" class="about_skills_cards_card about_skills_cards_card--javascript">
+      <i class="fab fa-js"></i>
+      <span>JavaScript</span>
     </div>
-
+    <div id="RubyOnRails" class="about_skills_cards_card about_skills_cards_card--ruby">
+      <i class="far fa-gem"></i>
+      <span>Ruby On Rails</span>
+    </div>
   </div>
+
+  <h6>React is the librairy I like working with the most, however I love to discover and learn new skills. I believe that a developer must not be restricted by a programming language, but it must adapt quickly to the needs and demands.</h6>
+
+  <p>Making a list of what I know would not be relevant. If you are interested in knowing more, here is a list of my experiences with the skills that I have learned at each of them.</p>
 </section>
 
-<section class="about_skills--main">
-  <div>
-    <h2>React</h2>
-    <div></div>
-  </div>
-
-  <div>
-    <h2>JavaScript</h2>
-    <div></div>
-  </div>
-
-  <div>
-    <h2>Ruby on Rails</h2>
-    <div></div>
-  </div>
+<section id="Experiences" class="about_experiences">
+    {% include about_experiences.html %}
 </section>
 
-<section class="about_skills--alternate">
-
-</section>
-
-<section class="about_jobs">
-
+<section id="Social" class="about_socials">
+  {% include about_socials.html %}
 </section>
