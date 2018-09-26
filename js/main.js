@@ -1,5 +1,6 @@
 $(document).ready(function($){
 	initProgressBar();
+	getRecentTrack();
 	$(window).scroll(function() {
 		// animateFeaturedCard($(window).scrollTop());
 		// animateProfil($(window).scrollTop());
@@ -7,6 +8,23 @@ $(document).ready(function($){
 		animateArticleNavBar($(window).scrollTop());
 	});
 });
+
+var getRecentTrack = function() {
+	var trackContainer = $('.about_listening');
+	if(trackContainer.length > 0) {
+		var getTracks = function() {
+			$.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=nicolasthy&limit=1&extended=1&api_key=cbf686449f9ddd212be0c08d7aebc60a&format=json', function(response) {
+				var track = response.recenttracks.track[0];
+				trackContainer.find('.about_listening_artist').html(" by " + track.artist.name);
+				trackContainer.find('.about_listening_song').html(track.name);
+				console.log(track);
+			});
+		}
+
+		getTracks();
+		setInterval(getTracks, 200000);
+	}
+}
 
 var animateFeaturedCard = function(scroll) {
 	$('.card-featured').each(function() {
@@ -31,7 +49,7 @@ var animateProfil = function(scroll) {
 
 var animateArticleSocial = function(scroll) {
 	var socials = $('#articleSocials');
-	if(socials && $(window).width() >= 1020) {
+	if(socials.length > 0 && $(window).width() >= 1020) {
 		var articleContent = $('.article_content').first();
 		var articleContentOffsets = $('.article_content').first().offset();
 		var socialPosition = (scroll - articleContentOffsets.top) + 140;

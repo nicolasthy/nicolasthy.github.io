@@ -1,4 +1,32 @@
 ﻿.about {
+    &_hero {
+        > img {
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            box-shadow: 0 15px 18px -12px rgba(17,17,17,0.40);
+            height: 525px;
+        }
+    }
+
+    &_listening {
+        min-height: 74px;
+        text-align: center;
+        margin: 40px 0;
+
+        i, &_label {
+            color: #1ed760;
+            font-weight: 700;
+        }
+
+        &_song {
+            color: #1ed760;
+            border-bottom: 2px solid #1ed760;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+    }
+
     &_description {
         &.row {
             width: 90%;
