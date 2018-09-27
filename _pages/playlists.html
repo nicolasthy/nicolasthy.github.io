@@ -1,0 +1,12 @@
+---
+permalink: "/playlists/"
+layout: playlistslist
+sitemap:
+  include: true
+  priority: 0.7
+  changefreq: monthly
+---
+
+{% for playlist in site.playlists %}
+    {{ playlist.title }}
+{% endfor %}

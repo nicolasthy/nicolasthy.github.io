@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  playlists:
+    title: Playlists
+    output: true
 description: "I'm Nicolas Thiry a front-end developer exploring the world of JavaScript & the beauty of React. Currently living in Lyon, France."
 author: Nicolas Thiry
 email: n.thiry92@gmail.com

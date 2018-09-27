@@ -31,7 +31,6 @@ React is defined as the V of the MVC pattern. Being very lightweight, React can 
 
 Facebook has created React to in order to fix a recurring issue on their social network. In fact they had a lot of complaints regarding chat notifications not syncing correctly across the platform. Therefor they searched for a way to setup a data flow in their application using a single data source. This gave birth to Flux. Flux makes state change predictable while storing the application’s state in a store and dispatching it to the components who need it.
 
-**Then the React God joined the battle**
 
 **Dan Abramov**, a developer at React, created his own implementation of this pattern, lighter and easier to approach. He is the author of Redux. This version of the Flux pattern has grown so much that it has more stars on Github than the official version.
 
