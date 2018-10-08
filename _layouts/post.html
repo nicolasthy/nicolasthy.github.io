@@ -69,8 +69,8 @@ layout: page
       {{ content }}
     </section>
     <div id="articleSocials" class="article_content_social">
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" onclick="shareToTwitter(event)"><i class="fab fa-twitter"></i></a>
+      <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
     </div>
   </div>
   <footer class="article_footer">
@@ -91,6 +91,23 @@ layout: page
     {% endif %}
   </footer>
 </article>
+
+<script>
+
+  var shareToTwitter = function(e) {
+    e.preventDefault();
+    var shareURL = "http://twitter.com/share?";
+    
+    var params = {
+      url: "{{ page.url | prepend: site.url }}", 
+      text: "{{ page.excerpt }}",
+      via: "nicolasthy"
+    }
+    for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
+    window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+  }
+
+</script>
 
 <script type="application/ld+json">
   {
