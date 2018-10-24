@@ -40,4 +40,4 @@ This is how it could look like:
   <label>React props & state</label>
 </div>
 
-Here you can see that when you open an app, it renders a component that may see it's state evolve during time and that this component may render another component as a child. I will continue talking about **states, props and render** in the next section.
+Here you can see that when you open an app, it renders a component that may see it's state evolve during time and that this component may render another component as a child.

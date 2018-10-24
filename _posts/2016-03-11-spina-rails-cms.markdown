@@ -13,7 +13,7 @@ warning: Spina has been updated a lot since I've written these articles. Command
 comments: true
 
 listed: true
-featured: true
+featured: false
 size: large
 
 redirect_from:
@@ -33,12 +33,12 @@ Installing Spina is really easy, you only need 3 simple lines given in their [Gi
 
 As it's a Ruby on Rails CMS, you obviously need to have a Rails app first. If you don't have ruby and rails installed on your machine, I've given links to get your environment configured in my [OSX development setup]({{site.baseurl}}/osx-el-capitan-dev-setup/) article !
 
-If you do have Ruby on Rails working, simple create a new project.
+If you do have Ruby on Rails working, simply create a new project.
 {% highlight ruby %}
 rails new MySpinaApp
 {% endhighlight %}
 
-Then simply add these lines to your `Gemfile`
+Then add these lines to your `Gemfile`
 {% highlight ruby %}
 gem 'spina-template'
 gem 'spina'
@@ -183,4 +183,78 @@ ol.breadcrumb
 
 `menu_title` is your Navigation Title in your Advanced tab and the `materialized_path` is in the Search Engine tab when creating / updating a page. The name of these variables can be found when looking into the [source code of Spina](https://github.com/denkGroot/Spina/blob/master/app/views/spina/admin/pages/_form_advanced.html.haml).
 
-That's it folks ! Hope this small series will help you start your own project on Spina !
+
+## Create a blog using a Spina Plugin
+
+Here is an alternate method to create a blog using a plugin. This will allow you to have your website pages in one place and a new page and admin section to manage your blog posts.
+
+Unfortunately Bram's blog plugin example does not have any installation guide yet. However Harm de Wit did publish a [wiki to create your own plugin](https://github.com/denkGroot/Spina/wiki/How-to-create-a-plugin) which helped understand how the installation worked.
+
+First of all you need to retrieve the files in the right location (Here I am using a fork of Bram's plugin which is originaly in dutch):
+{% highlight shell %}
+# run these commands in your rails project
+cd vendor
+mkdir plugins
+cd plugins
+git clone https://github.com/nicolasthy/Spina-Blog-Example.git spina_blog
+{% endhighlight %}
+
+Once you've cloned the file you can add the plugin to your Gemfile and run `bundle install`:
+
+`gem 'spina_blog', path: 'vendor/plugins'`
+
+This plugin comes with migrations that you need to retrieve in your main app with the following commands:
+{% highlight ruby %}
+rake spina_blog_engine:install:migrations
+rake db:migrate
+{% endhighlight %}
+
+You have now succesfully installed the blog plugin ! Now if you head to your admin panel you should have a new tab for Blog Posts !
+
+![Spina Blog Plugin]({{site.baseurl}}/images/blog-admin-plugin.png "Spina Blog Plugin")
+
+## Setting up the views
+
+I'm going to build something different than my current blog to be able to completely use the plugin's functionalities. Therefore I'll be using the `/blog` path to display all the blogposts and the `/` path to display a simple landing page.
+
+First of all let's create the correct views by overriding the plugin. We need two new files:
+
+  * `/app/views/blogposts/index.html.haml`
+  * `/app/views/blogposts/show.html.haml`
+
+The controllers already exist and return the correct data, we just have to retrieve them in the new views:
+
+`index.html.haml`
+{% highlight haml %}
+%ul
+  - @blogposts.all.each do |blog|
+    %li= link_to blog.title, blog.materialized_path
+{% endhighlight %}
+
+
+`show.html.haml`
+{% highlight haml %}
+%h1= @blogpost.title
+= @blogpost.content.try(:html_safe)
+{% endhighlight %}
+
+Unfortunately if you try to access these pages on the `/blog` path, it would not be working.
+The fix is to add a `custom_page` in your theme for your Blog to be able to add it in the menu and for it to get your theme application layout.
+
+{% highlight ruby %}
+theme.custom_pages = [{
+  name:           'homepage',
+  title:          'Homepage',
+  deletable:      false,
+  view_template:  'homepage'
+},
+{
+  name: 'blog',
+  title: 'Blog',
+  deletable: false,
+  view_template: 'homepage'
+}]
+{% endhighlight %}
+
+Now try accessing your http://localhost:3000/ . You should now see a new item in your Navigation: "Blog". Awesome your blog is up and running !!
+

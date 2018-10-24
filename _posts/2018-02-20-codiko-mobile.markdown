@@ -11,10 +11,10 @@ excerpt: In 2017 I've worked on my first real case React Native app while workin
 comments: true
 
 listed: true
-featured: false
-size: small
+featured: true
+size: large
 
-published: false
+published: true
 ---
 
 Codiko is a web and mobile app to train for the driver's license theoretical exam in France. It was initially a project that had to be integrated to the existing online driving school website, PermiGo. However, regarding the size of the app we chose to create a stand-alone app. Therefor we chose to start the project with trending programming tools such as Ruby On Rails 5 (the final release was not yet out) and React.
@@ -33,10 +33,12 @@ The actual design of the app wasn't bad. We just wanted to change it since we wa
 
 At that time I was not yet graduated and had a paper to write. My subject was about React and how React Native could be an interesting solution for companies willing to extend their website to mobile platforms. I had already read a lot about the subject but I needed a real-life example. I did work on some random projects but it was mainly "To-Do"-like projects. This was my first real React Native project.
 
+Here are a few challenges we had to meat during the development:
+
 * How to connect our API to the app;
 * How to setup a custom oAuth (I was used to connect to Google which is far more easier given all the components already available by the community);
 * Implement a new, more user-friendly UI;
-* Take advantage of the current website React code;
+* Take advantage of the current website's React code;
 * Publish a React Native app.
 
 We were also working on a new version of PermiGo's website and couldn't work a 100% on this mobile app: we fixed our schedule to be 90% on PermiGo and 10% on Codiko Native. In order to increase the available time to work on it, we had to prove that React Native was the best solution for us in terms of performance, ease of use and time spent working on it.
@@ -61,3 +63,14 @@ While developing this mobile app, we thought about many new features that needed
 
 ## Conclusion
 
+The result of this research project was really satisfying. Even if it was never published we noticed some perks of using React Native for a mobile app:
+
+* It's written in JavaScript, it is easy to reuse existing code from the website (or reuse the app's code for the website)
+* It let's you use a familiar environment: JavaScript, Jest, ESLint, React, Redux, ...
+* It's like developing a responsive website but with native components
+* The community is incredible and provides tons of components ready to use
+* Code once, run everywhere (iOS & Android)
+
+I could name more, but that would be rewriting React Native's front page.
+
+Facebook, Instagram, Pinterest, Skype, ... are using React Native for their apps. That looks like a good reason to trust it and give it a try. As I said, it's really easy to learn when you already know JavaScript and even more if you know React.
