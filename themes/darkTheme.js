@@ -1,25 +1,33 @@
 import { COLORS } from "./constants"
-import { hex2rgba } from "./utils"
+import { hex2rgba } from "./utils"
 
 import { Sun } from "@styled-icons/heroicons-solid/Sun"
 
 export const DARK_THEME = {
+  favicon: "favicon-dark.ico",
   text: "#F7F7FF",
   textLight: "#B1B0B6",
+  textStrong: COLORS.secondary,
   background: "#0E0C0C",
   backgroundTransition: "#CFF7B9",
   themeIcon: {
     icon: <Sun size="24" />,
     color: COLORS.secondary,
   },
-  link: "rgba(255,255,255, 0.7)",
+  link: COLORS.secondary,
   logo: {
     background: COLORS.secondary,
     color: COLORS.dark,
   },
+  profile: {
+    background: COLORS.primary,
+  },
   menu: {
     activeBackground: hex2rgba(COLORS.secondary, 0.1),
     activeColor: COLORS.secondary,
+  },
+  footer: {
+    text: hex2rgba("#F7F7FF", 0.4),
   },
   posts: {
     item: "#161413",
@@ -30,6 +38,7 @@ export const DARK_THEME = {
     syntaxHighlightTheme: "atomOneDark",
     syntaxHighlightBackground: "#191716",
     imageShadowOpacity: 0.05,
+    imageBackgroundOverlay: "#0E0C0C",
     inlineCodeBackground: hex2rgba(COLORS.light, 0.1),
     inlineCodeColor: hex2rgba(COLORS.secondary, 0.8),
   },

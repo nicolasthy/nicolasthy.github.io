@@ -11,11 +11,7 @@ const ThemeProvider = ({ children }) => {
   const [isDark, toggleDarkMode, mountedComponent] = useDarkMode()
 
   const renderBody = () => {
-    const body = (
-      <Layout toggleDarkMode={toggleDarkMode}>
-        {children}
-      </Layout>
-    )
+    const body = <Layout toggleDarkMode={toggleDarkMode}>{children}</Layout>
     if (!mountedComponent) return <div style={{ visibility: "hidden" }}>{body}</div>
     return body
   }

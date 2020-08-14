@@ -2,6 +2,8 @@ import { useRouter } from "next/router"
 import ErrorPage from "next/error"
 import Head from "next/head"
 
+import { PostHeader } from "../../components/posts/PostHeader/PostHeader"
+import { PostFooter } from "../../components/posts/PostFooter/PostFooter"
 import { Markdown } from "../../components/posts/Markdown/Markdown"
 
 import { getPostBySlug, getAllPosts } from "../../lib/api"
@@ -17,14 +19,27 @@ export default function Post({ post }) {
         <title>{post.title} - Nicolas Thiry</title>
         <meta name="description" content={post.excerpt} />
       </Head>
-      <h1>{post.title}</h1>
+      <PostHeader title={post.title} />
       <Markdown source={post.content} />
+      <PostFooter post={post} />
     </>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, ["title", "created_at", "slug", "content", "excerpt"])
+  const post = getPostBySlug(params.slug, ["title", "created_at", "slug", "content", "readingTime", "related"])
+
+  if (post.related) {
+    post.relatedPost = getPostBySlug(post.related, [
+      "title",
+      "created_at",
+      "slug",
+      "excerpt",
+      "tags",
+      "published",
+      "readingTime",
+    ])
+  }
 
   return {
     props: {

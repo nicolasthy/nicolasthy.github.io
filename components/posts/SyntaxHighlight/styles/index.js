@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import SyntaxHighlighter from "react-syntax-highlighter"
 
-import { FONTS } from "../../../../themes/constants"
+import { FONTS, LANGUAGES_COLORS } from "../../../../themes/constants"
 
 export const Container = styled.div`
   position: relative;
@@ -62,6 +62,7 @@ export const CodeLanguage = styled.span`
   opacity: 1;
   color: #fff;
   text-align: center;
+  background: ${({ language }) => LANGUAGES_COLORS[language] || "#000000"};
 `
 
 export const StyledSyntaxHighlight = styled(SyntaxHighlighter)`

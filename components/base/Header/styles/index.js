@@ -10,6 +10,14 @@ export const Container = styled.header`
   }
 `
 
+export const LogoLink = styled.a`
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+`
+
 export const Logo = styled.span`
   background: ${({ theme }) => theme.logo.background};
   color: ${({ theme }) => theme.logo.color};
@@ -32,7 +40,7 @@ export const Logo = styled.span`
 export const ToggleIcon = styled.div`
   margin: 0 0 0 auto;
   cursor: pointer;
-  color: ${({theme}) => theme.themeIcon.color}
+  color: ${({ theme }) => theme.themeIcon.color};
 `
 
 export const Menu = styled.ul`
@@ -46,5 +54,14 @@ export const MenuItem = styled.li`
   padding: 4px 15px;
   font-family: ${FONTS.sansSerif};
   background: ${({ active, theme }) => (active ? theme.menu.activeBackground : "")};
-  color: ${({ active, theme }) => (active ? theme.menu.activeColor : "")};
+  a {
+    color: ${({ active, theme }) => (active ? theme.menu.activeColor : theme.textLight)};
+    opacity: ${({ active }) => (active ? 1 : 0.7)};
+    transition: 0.2s linear;
+
+    &:hover {
+      color: ${({ theme }) => theme.menu.activeColor};
+      opacity: 0.8;
+    }
+  }
 `

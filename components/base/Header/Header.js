@@ -3,26 +3,38 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { ThemeContext } from "styled-components"
 
-import { Container, Logo, Menu, MenuItem, ToggleIcon } from "./styles"
+import { Container, LogoLink, Logo, Menu, MenuItem, ToggleIcon } from "./styles"
 
 const Header = ({ toggleDarkMode }) => {
   const router = useRouter()
   const theme = useContext(ThemeContext)
 
-  const isPostsPathname = () => {
-    return router.pathname === "/" || router.pathname.includes("/posts")
+  const isMenuItemActive = (item) => {
+    if (item === "posts") {
+      return router.pathname === "/" || router.pathname.includes("/posts")
+    } else if (item === "about") {
+      return router.pathname === "/about"
+    }
   }
 
   return (
     <Container>
       <Link href="/" as={`/`}>
-        <a>
+        <LogoLink>
           <Logo>nt</Logo>
-        </a>
+        </LogoLink>
       </Link>
       <Menu>
-        <MenuItem active={isPostsPathname()}>Stories</MenuItem>
-        <MenuItem active={false}>About me</MenuItem>
+        <MenuItem active={isMenuItemActive("posts")}>
+          <Link href="/" as="/">
+            <a>Stories</a>
+          </Link>
+        </MenuItem>
+        <MenuItem active={isMenuItemActive("about")}>
+          <Link href="/about" as="/about">
+            <a>About me</a>
+          </Link>
+        </MenuItem>
       </Menu>
       <ToggleIcon onClick={toggleDarkMode}>{theme.themeIcon.icon}</ToggleIcon>
     </Container>

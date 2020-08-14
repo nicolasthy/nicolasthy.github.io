@@ -1,7 +1,9 @@
 import Head from "next/head"
+import { PageTransition } from "next-page-transitions"
+
 import { ThemeProvider } from "../contexts/ThemeProvider"
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps, router }) => {
   return (
     <ThemeProvider>
       <Head>
@@ -13,7 +15,14 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         ></link>
       </Head>
-      <Component {...pageProps} />
+      <PageTransition
+        timeout={800}
+        skipInitialTransition={true}
+        monkeyPatchScrolling={true}
+        classNames="page-transition"
+      >
+        <Component {...pageProps} key={router.route} />
+      </PageTransition>
     </ThemeProvider>
   )
 }

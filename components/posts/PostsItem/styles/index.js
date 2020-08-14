@@ -1,21 +1,6 @@
 import styled from "styled-components"
 
-import { FONTS } from "../../../../themes/constants"
-
-const languageHighlightColors = {
-  html: {
-    background: "#00BBF9",
-  },
-  css: {
-    background: "#00F5D4",
-  },
-  javascript: {
-    background: "#FEE020",
-  },
-  ruby: {
-    background: "#F15BB5",
-  },
-}
+import { FONTS, LANGUAGES_COLORS } from "../../../../themes/constants"
 
 export const Container = styled.li`
   background: ${({ theme }) => theme.posts.item};
@@ -28,6 +13,23 @@ export const Container = styled.li`
   &:hover {
     background: ${({ theme }) => theme.posts.itemHover};
     box-shadow: ${({ theme }) => theme.posts.itemHoverShadow};
+  }
+
+  p {
+    &:first-of-type {
+      font-size: 12px;
+      margin: 0 0 5px;
+      opacity: 0.7;
+    }
+
+    color: ${({ theme }) => theme.textLight};
+    margin: 0;
+  }
+`
+
+export const StyledLink = styled.div`
+  a {
+    text-decoration: none;
   }
 `
 
@@ -50,7 +52,7 @@ export const TagsItem = styled.li`
   font-weight: 600;
   padding: 5px 20px;
   font-family: ${FONTS.sansSerif};
-  background: ${({ tag }) => languageHighlightColors[tag].background};
+  background: ${({ tag }) => LANGUAGES_COLORS[tag] || "#000000"};
   border-radius: 50px;
   color: #f7f7ff;
 `

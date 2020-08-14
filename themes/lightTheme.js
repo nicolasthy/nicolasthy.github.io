@@ -4,22 +4,30 @@ import { hex2rgba } from "./utils"
 import { Moon } from "@styled-icons/heroicons-solid/Moon"
 
 export const LIGHT_THEME = {
+  favicon: "favicon-light.ico",
   text: "#191716",
   textLight: "#191716",
+  textStrong: COLORS.primary,
   background: "#F7F7FF",
   backgroundTransition: "#9B5DE5",
   themeIcon: {
     icon: <Moon size="24" />,
     color: COLORS.primary,
   },
-  link: "#424140",
+  link: COLORS.primary,
   logo: {
     background: COLORS.primary,
     color: COLORS.light,
   },
+  profile: {
+    background: COLORS.secondary,
+  },
   menu: {
     activeBackground: hex2rgba(COLORS.primary, 0.1),
     activeColor: COLORS.primary,
+  },
+  footer: {
+    text: hex2rgba("#191716", 0.4),
   },
   posts: {
     item: "#FCFCFF",
@@ -30,6 +38,7 @@ export const LIGHT_THEME = {
     syntaxHighlightTheme: "githubGist",
     syntaxHighlightBackground: "#FAFAFF",
     imageShadowOpacity: 0.35,
+    imageBackgroundOverlay: "#F7F7FF",
     inlineCodeBackground: hex2rgba(COLORS.dark, 0.05),
     inlineCodeColor: hex2rgba(COLORS.primary, 0.8),
   },

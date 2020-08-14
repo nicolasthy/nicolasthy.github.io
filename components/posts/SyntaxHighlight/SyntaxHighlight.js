@@ -6,6 +6,9 @@ import * as copy from "copy-to-clipboard"
 import { ClipboardCopy } from "@styled-icons/heroicons-outline/ClipboardCopy"
 import { Check } from "@styled-icons/heroicons-outline/Check"
 
+import { LANGUAGES_COLORS } from "../../../themes/constants"
+import { hex2rgba } from "../../../themes/utils"
+
 import { Container, CopyLink, CodeLanguage, CopyLinkChecked, StyledSyntaxHighlight } from "./styles"
 
 const SyntaxHighlight = ({ value, language = "shell" }) => {
@@ -15,6 +18,8 @@ const SyntaxHighlight = ({ value, language = "shell" }) => {
   const lines = language.match(/{([^}]+)}/)
   const highlights = lines && lines[1].split(",").map((highlight) => Number.parseInt(highlight))
   const codeLanguage = lines ? language.replace(language.match(/{([^}]+)}/)[0], "") : language
+  const formattedCodeLanguage = codeLanguage.toLowerCase()
+  const languageColor = LANGUAGES_COLORS[formattedCodeLanguage] || "#000000"
 
   const handleCopyToClipboard = () => {
     copy(value)
@@ -45,12 +50,20 @@ const SyntaxHighlight = ({ value, language = "shell" }) => {
     <Container>
       <div>
         <CopyLink onClick={handleCopyToClipboard}>{renderCopyLink()}</CopyLink>
-        <CodeLanguage>{codeLanguage}</CodeLanguage>
+        <CodeLanguage language={formattedCodeLanguage}>{codeLanguage}</CodeLanguage>
       </div>
       <StyledSyntaxHighlight
-        language={codeLanguage.toLowerCase()}
+        language={formattedCodeLanguage}
         style={themes[theme.posts.syntaxHighlightTheme]}
         wrapLines={true}
+        lineProps={(lineNumber) => {
+          let style = {}
+          if (highlights && highlights.includes(lineNumber)) {
+            style.backgroundColor = hex2rgba(languageColor, 0.1)
+            style.borderLeft = `3px solid ${languageColor}`
+          }
+          return { style }
+        }}
       >
         {value}
       </StyledSyntaxHighlight>

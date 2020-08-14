@@ -8,7 +8,7 @@ published: true
 ---
 
 <div class="alert alert-warning">
-Spina has been updated a lot since I've written these articles. Commands may have changed since and I will do my best to write new articles on Spina soon !
+Spina has been updated a lot since I've written these articles. The code and commands given here may be outdated.
 </div>
 
 Hi, I've been very busy lately trying to explore new stuff and I realized it was time to share some of my discoveries. Some of you may want me to write more articles about React but to be honest I've been mainly working on Spina and there is so much to do on it, really enjoying everything about it !
@@ -49,7 +49,7 @@ rake db:migrate
 
 You have now succesfully installed the blog plugin ! Now if you head to your admin panel you should have a new tab for Blog Posts !
 
-![Spina Blog Plugin](../static/blog-admin-plugin.png "Spina Blog Plugin")
+![Spina Blog Plugin](../static/posts/2016-03-23-spina-blog-tutorial/blog-admin-plugin.png "Spina Blog Plugin")
 
 ## Setting up the views
 

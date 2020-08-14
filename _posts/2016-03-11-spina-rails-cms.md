@@ -5,10 +5,11 @@ tags: ["ruby"]
 excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step guide to get started with it.
 created_at: '2016-03-11 15:00:00 Z'
 published: true
+related: 2016-03-23-spina-blog-tutorial
 ---
 
 <div class="alert alert-warning">
-Spina has been updated a lot since I've written these articles. Commands may have changed since and I will do my best to write new articles on Spina soon !
+Spina has been updated a lot since I've written these articles. The code and commands given here may be outdated.
 </div>
 
 Hi, lately I have been working on a different project that no longer requires React — neither Javascript actually. It's a CMS built on Ruby on Rails, a kind of equivalent to Wordpress, called [Spina](http://www.spinacms.com/). It's new, it's open-source, it's ruby on rails and it's awesome !
@@ -51,7 +52,7 @@ After installing Spina, and if you chose to use the Demo theme, you will have tw
 
 This is how our New page panel will look like for our Post page creation.
 
-![Spina Admin Panel](../static/spina-admin.png "Spina Admin Panel")
+![Spina Admin Panel](../static/posts/2016-03-11-spina-rails-cms/spina-admin.png "Spina Admin Panel")
 
 You can go and create a new file in this folder with your own theme name, I'll be calling it `labs.rb`.
 
@@ -119,7 +120,7 @@ We are going to create a blog similar to the one that I currently have. It's don
 
 This is what you should get at the end.
 
-![Butane Spina Theme](../static/tutorial-blog.png "Butane Spina Theme")
+![Butane Spina Theme](../static/posts/2016-03-11-spina-rails-cms/tutorial-blog.png "Butane Spina Theme")
 
 To achieve this you will need to create the following files:
 

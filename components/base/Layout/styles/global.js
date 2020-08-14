@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({theme}) => theme.background};
-    color: ${({theme}) => theme.text};
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
     transition: background 0.2s linear, color 0.2s linear;
   }
   pre {
@@ -17,8 +17,15 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
   a {
-    color: ${({theme}) => theme.link};
-    transition: color 0.1s linear;
+    position: relative;
+    color: ${({ theme }) => theme.link};
+    text-decoration: underline wavy;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
   h1,
   h2,
@@ -29,14 +36,14 @@ export const GlobalStyles = createGlobalStyle`
   }
   .medium-zoom-overlay {
     z-index: 10;
-    background: ${({theme}) => theme.backgroundTransition} !important;
+    background: ${({ theme }) => theme.posts.imageBackgroundOverlay} !important;
   }
   .medium-zoom-image.medium-zoom-image--opened {
     z-index: 15;
   }
   .page-transition-enter:after {
     content: "";
-    background: ${({theme}) => theme.backgroundTransition};
+    background: ${({ theme }) => theme.backgroundTransition};
     position: fixed;
     top: 0;
     right: 0;
@@ -48,7 +55,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .page-transition-enter-active:after {
     content: "";
-    background: ${({theme}) => theme.backgroundTransition};
+    background: ${({ theme }) => theme.backgroundTransition};
     position: fixed;
     top: 0;
     right: 0;
@@ -60,7 +67,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .page-transition-exit:after {
     content: "";
-    background: ${({theme}) => theme.backgroundTransition};
+    background: ${({ theme }) => theme.backgroundTransition};
     position: fixed;
     top: 0;
     right: 0;
@@ -72,7 +79,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .page-transition-exit-active:after {
     content: "";
-    background: ${({theme}) => theme.backgroundTransition};
+    background: ${({ theme }) => theme.backgroundTransition};
     position: fixed;
     top: 0;
     right: 0;
