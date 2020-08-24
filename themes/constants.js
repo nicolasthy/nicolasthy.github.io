@@ -16,4 +16,5 @@ export const FONTS = {
 export const LANGUAGES_COLORS = {
   ruby: "#F15BB5",
   javascript: "#FEE020",
+  react: "#0137A2",
 }

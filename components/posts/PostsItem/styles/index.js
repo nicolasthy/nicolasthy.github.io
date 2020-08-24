@@ -51,6 +51,7 @@ export const TagsItem = styled.li`
   font-size: 11px;
   font-weight: 600;
   padding: 5px 20px;
+  margin: 0 8px 0 0;
   font-family: ${FONTS.sansSerif};
   background: ${({ tag }) => LANGUAGES_COLORS[tag] || "#000000"};
   border-radius: 50px;

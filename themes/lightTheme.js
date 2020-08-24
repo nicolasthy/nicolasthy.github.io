@@ -4,6 +4,7 @@ import { hex2rgba } from "./utils"
 import { Moon } from "@styled-icons/heroicons-solid/Moon"
 
 export const LIGHT_THEME = {
+  name: "light",
   favicon: "favicon-light.ico",
   text: "#191716",
   textLight: "#191716",

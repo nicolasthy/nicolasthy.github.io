@@ -102,7 +102,7 @@ self.view_templates = {
   'page' => { title:'Custom Page', page_parts: %w(content) }
 }
 ```
-<center><small><em>Writting `%w(excerpt thumbnail content)` is the same as writting `["excerpt", "thumbnail", "content"]`. It's just a shortcut.</em></small></center>
+Writting `%w(excerpt thumbnail content)` is the same as writting `["excerpt", "thumbnail", "content"]`. It's just a shortcut.
 
 And finally we will add a custom_pages, that will be our Homepage. It seems to be a bug with Spina, but every time you update your Preferences, it regenerates all the defined custom_pages if they don't exist. And unfortunately I didn't manage to not to define any custom_pages. That's why we will only define the Homepage which will always be existent on our website.
 

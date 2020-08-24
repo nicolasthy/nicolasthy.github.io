@@ -8,10 +8,11 @@ import { Check } from "@styled-icons/heroicons-outline/Check"
 
 import { LANGUAGES_COLORS } from "../../../themes/constants"
 import { hex2rgba } from "../../../themes/utils"
+import * as gtag from "../../../lib/gtag"
 
 import { Container, CopyLink, CodeLanguage, CopyLinkChecked, StyledSyntaxHighlight } from "./styles"
 
-const SyntaxHighlight = ({ value, language = "shell" }) => {
+const SyntaxHighlight = ({ value, language = "shell", slug }) => {
   const theme = useContext(ThemeContext)
   const [copied, setCopied] = useState(false)
 
@@ -22,6 +23,7 @@ const SyntaxHighlight = ({ value, language = "shell" }) => {
   const languageColor = LANGUAGES_COLORS[formattedCodeLanguage] || "#000000"
 
   const handleCopyToClipboard = () => {
+    gtag.event({ action: "post_syntax_copy", category: "click", label: `Copy code from ${slug}` })
     copy(value)
     if (!copied) setCopied(true)
     setTimeout(() => {

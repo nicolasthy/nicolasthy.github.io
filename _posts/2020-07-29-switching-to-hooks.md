@@ -1,7 +1,7 @@
 ---
 title: "Switching to React Hooks"
 author: Nicolas Thiry
-tags: ["javascript"]
+tags: ["react"]
 excerpt: How I switched from React components to React Hooks on a large scale application.
 created_at: "2020-07-29 12:00:00 Z"
 published: false
@@ -11,7 +11,7 @@ For a long time React components were written as `class` components. Before gett
 
 Without hooks:
 
-```react
+```React
 import React, { Component } from "react"
 
 class MyAwesomeComponent extends Component {
@@ -43,7 +43,7 @@ export { MyAwesomeComponent }
 
 With hooks:
 
-```react
+```React
 import React, { useState } from "react"
 
 const MyAwesomeComponent = () => {

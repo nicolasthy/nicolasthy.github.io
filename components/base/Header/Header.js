@@ -3,11 +3,18 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { ThemeContext } from "styled-components"
 
+import * as gtag from "../../../lib/gtag"
+
 import { Container, LogoLink, Logo, Menu, MenuItem, ToggleIcon } from "./styles"
 
 const Header = ({ toggleDarkMode }) => {
   const router = useRouter()
   const theme = useContext(ThemeContext)
+
+  const handleToggleDarkMode = () => {
+    toggleDarkMode()
+    gtag.event({ action: "toggle_dark_mode", category: "click", label: `Toggle theme from ${theme.name}` })
+  }
 
   const isMenuItemActive = (item) => {
     if (item === "posts") {
@@ -36,7 +43,7 @@ const Header = ({ toggleDarkMode }) => {
           </Link>
         </MenuItem>
       </Menu>
-      <ToggleIcon onClick={toggleDarkMode}>{theme.themeIcon.icon}</ToggleIcon>
+      <ToggleIcon onClick={handleToggleDarkMode}>{theme.themeIcon.icon}</ToggleIcon>
     </Container>
   )
 }

@@ -4,6 +4,7 @@ import { hex2rgba } from "./utils"
 import { Sun } from "@styled-icons/heroicons-solid/Sun"
 
 export const DARK_THEME = {
+  name: "dark",
   favicon: "favicon-dark.ico",
   text: "#F7F7FF",
   textLight: "#B1B0B6",

@@ -1,7 +1,8 @@
 import { ProfilePicture } from "../../shared/ProfilePicture/ProfilePicture"
 import { PostsList } from "../PostsList/PostsList"
+import { ArrowLink } from "../../shared/ArrowLink/ArrowLink"
 
-import { Footer } from "./styles"
+import { Footer, RelatedPost } from "./styles"
 
 const PostFooter = ({ post }) => {
   return (
@@ -10,10 +11,11 @@ const PostFooter = ({ post }) => {
         <ProfilePicture />
       </div>
       {post.relatedPost && (
-        <div>
+        <RelatedPost>
           <span>You may be interested in reading this</span>
           <PostsList posts={[post.relatedPost]} />
-        </div>
+          <ArrowLink href={"/posts"} as={"/posts"} label="View all writings" />
+        </RelatedPost>
       )}
     </Footer>
   )
