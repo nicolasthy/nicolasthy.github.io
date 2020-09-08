@@ -51,10 +51,15 @@ const SyntaxHighlight = ({ value, language = "shell", slug }) => {
   return (
     <Container>
       <div>
-        <CopyLink onClick={handleCopyToClipboard}>{renderCopyLink()}</CopyLink>
-        <CodeLanguage language={formattedCodeLanguage}>{codeLanguage}</CodeLanguage>
+        <CopyLink onClick={handleCopyToClipboard} className="syntaxHighlight_copyLink">
+          {renderCopyLink()}
+        </CopyLink>
+        <CodeLanguage language={formattedCodeLanguage} className="syntaxHighlight_language">
+          {codeLanguage}
+        </CodeLanguage>
       </div>
       <StyledSyntaxHighlight
+        className="syntaxHighlight_snippet"
         language={formattedCodeLanguage}
         style={themes[theme.posts.syntaxHighlightTheme]}
         wrapLines={true}

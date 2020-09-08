@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import { PostTime } from "../PostTime/PostTime"
+
 import { Container, StyledLink, PostTitle, TagsList, TagsItem } from "./styles"
 
 const PostsItem = ({ post }) => {
@@ -9,19 +11,7 @@ const PostsItem = ({ post }) => {
         <a>
           <Container>
             <PostTitle>{post.title}</PostTitle>
-            <p>
-              <time>
-                {new Date(post.created_at).toLocaleDateString("en", {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </time>
-              <small> - </small>
-              <span>
-                {post.readingTime} min read <small>☕️</small>
-              </span>
-            </p>
+            <PostTime post={post} />
             <p>{post.excerpt}</p>
             <TagsList>
               {post.tags &&

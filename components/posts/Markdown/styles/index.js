@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import ReactMarkdown from "react-markdown"
+import Markdown from "markdown-to-jsx"
 
-export const StyledMarkdown = styled(ReactMarkdown)`
+export const StyledMarkdown = styled(Markdown)`
   font-size: 18px;
   line-height: 2.125;
 

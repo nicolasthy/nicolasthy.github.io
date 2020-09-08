@@ -19,7 +19,7 @@ export default function Post({ post }) {
         <title>{post.title} - Nicolas Thiry</title>
         <meta name="description" content={post.excerpt} />
       </Head>
-      <PostHeader title={post.title} />
+      <PostHeader post={post} />
       <Markdown source={post.content} slug={post.slug} />
       <PostFooter post={post} />
     </>

@@ -139,6 +139,7 @@ Now that the views exist, you can actually go and create your pages in your Admi
 Everything you need to display is contained in the `@page` variable. Also Spina is based on ancestry to handle your pages tree. You can use it like this:
 
 _homepage.html.haml_
+
 ```Haml
 %section.c-archives
   %ul.c-archives__list
@@ -163,6 +164,7 @@ To get the full code for this theme you can go and [download the sources here](h
 ### Bonus: Creating a breadcrumb
 
 Here is another example of how you can manipulate your tree using ancestry in Spina
+
 ```Haml
 %ol.breadcrumb
   %li

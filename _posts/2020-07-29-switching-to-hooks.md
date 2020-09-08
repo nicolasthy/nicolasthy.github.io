@@ -9,7 +9,7 @@ published: false
 
 For a long time React components were written as `class` components. Before getting into details about the why and how, let's have a look at the same component written with and without Hooks.
 
-Without hooks:
+<SyntaxComparaison>
 
 ```React
 import React, { Component } from "react"
@@ -41,8 +41,6 @@ class MyAwesomeComponent extends Component {
 export { MyAwesomeComponent }
 ```
 
-With hooks:
-
 ```React
 import React, { useState } from "react"
 
@@ -64,3 +62,5 @@ const MyAwesomeComponent = () => {
 
 export { MyAwesomeComponent }
 ```
+
+</SyntaxComparaison>

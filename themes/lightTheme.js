@@ -23,6 +23,9 @@ export const LIGHT_THEME = {
   profile: {
     background: COLORS.secondary,
   },
+  header: {
+    background: "#FCFCFF",
+  },
   menu: {
     activeBackground: hex2rgba(COLORS.primary, 0.1),
     activeColor: COLORS.primary,

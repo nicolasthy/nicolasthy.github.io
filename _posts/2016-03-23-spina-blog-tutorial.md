@@ -28,6 +28,7 @@ So let's get started !!
 Unfortunately Bram's blog plugin example does not have any installation guide yet. However Harm de Wit did publish a [wiki to create your own plugin](https://github.com/denkGroot/Spina/wiki/How-to-create-a-plugin) which helped understand how the installation worked.
 
 First of all you need to retrieve the files in the right location (Here I am using a fork of Bram's plugin which is originaly in dutch):
+
 ```Shell
 # run these commands in your rails project
 cd vendor
@@ -37,11 +38,13 @@ git clone https://github.com/nicolasthy/Spina-Blog-Example.git spina_blog
 ```
 
 Once you've cloned the file you can add the plugin to your Gemfile and run `bundle install`:
+
 ```Ruby
 gem 'spina_blog', path: 'vendor/plugins'
 ```
 
 This plugin comes with migrations that you need to retrieve in your main app with the following commands:
+
 ```Ruby
 rake spina_blog_engine:install:migrations
 rake db:migrate
@@ -63,6 +66,7 @@ First of all let's create the correct views by overriding the plugin. We need tw
 The controllers already exist and return the correct data, we just have to retrieve them in the new views:
 
 `index.html.haml`
+
 ```Haml
 %ul
   - @blogposts.all.each do |blog|
@@ -71,6 +75,7 @@ The controllers already exist and return the correct data, we just have to retri
 
 
 `show.html.haml`
+
 ```Haml
 %h1= @blogpost.title
 = @blogpost.content.try(:html_safe)

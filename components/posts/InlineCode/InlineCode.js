@@ -1,7 +1,7 @@
 import { Code } from "./styles"
 
-const InlineCode = ({ value }) => {
-  return <Code>{value}</Code>
+const InlineCode = ({ children }) => {
+  return <Code>{children}</Code>
 }
 
 export { InlineCode }

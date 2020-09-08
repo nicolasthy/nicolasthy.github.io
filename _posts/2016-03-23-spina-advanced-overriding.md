@@ -47,6 +47,7 @@ Now if you set your `SEO <title>` to blank it won't insert the title of the page
 ## Displaying our custom page title
 
 This is the easy part, we just have to set our title in our default layout:
+
 ```Ruby
 title = @page.seo_title.present? ? @page.seo_title : "#{@page.title} - #{current_account.name}"
 ```

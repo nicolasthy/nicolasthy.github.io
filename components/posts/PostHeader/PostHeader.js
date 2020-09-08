@@ -1,9 +1,12 @@
+import { PostTime } from "../PostTime/PostTime"
+
 import { Title } from "./styles"
 
-const PostHeader = ({ title }) => {
+const PostHeader = ({ post }) => {
   return (
     <>
-      <Title>{title}</Title>
+      <Title>{post.title}</Title>
+      <PostTime post={post} />
     </>
   )
 }

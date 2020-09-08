@@ -1,8 +1,10 @@
+import { AboutBio } from "../components/about/AboutBio/AboutBio"
+
 const About = () => {
   return (
-    <div>
-      <h1>About me</h1>
-    </div>
+    <>
+      <AboutBio />
+    </>
   )
 }
 

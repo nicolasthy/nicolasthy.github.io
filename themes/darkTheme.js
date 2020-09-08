@@ -23,6 +23,9 @@ export const DARK_THEME = {
   profile: {
     background: COLORS.primary,
   },
+  header: {
+    background: "#161413",
+  },
   menu: {
     activeBackground: hex2rgba(COLORS.secondary, 0.1),
     activeColor: COLORS.secondary,
