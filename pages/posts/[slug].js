@@ -1,6 +1,8 @@
+import { useEffect, useRef } from "react"
 import { useRouter } from "next/router"
 import ErrorPage from "next/error"
 import Head from "next/head"
+import anime from "animejs"
 
 import { PostHeader } from "../../components/posts/PostHeader/PostHeader"
 import { PostFooter } from "../../components/posts/PostFooter/PostFooter"
@@ -10,6 +12,18 @@ import { getPostBySlug, getAllPosts } from "../../lib/api"
 
 export default function Post({ post }) {
   const router = useRouter()
+  const contentRef = useRef()
+
+  useEffect(() => {
+    anime({
+      targets: contentRef.current.children,
+      translateY: [40, 0],
+      opacity: [0, 1],
+      duration: 800,
+      delay: anime.stagger(100, { start: 300 }),
+    })
+  }, [contentRef])
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -19,9 +33,11 @@ export default function Post({ post }) {
         <title>{post.title} - Nicolas Thiry</title>
         <meta name="description" content={post.excerpt} />
       </Head>
-      <PostHeader post={post} />
-      <Markdown source={post.content} slug={post.slug} />
-      <PostFooter post={post} />
+      <div ref={contentRef}>
+        <PostHeader post={post} />
+        <Markdown source={post.content} slug={post.slug} />
+        <PostFooter post={post} />
+      </div>
     </>
   )
 }

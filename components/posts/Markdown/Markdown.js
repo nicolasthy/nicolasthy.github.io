@@ -1,3 +1,4 @@
+import { TwitterTweet } from "../TwitterTweet/TwitterTweet"
 import { SyntaxHighlight } from "../SyntaxHighlight/SyntaxHighlight"
 import { InlineCode } from "../InlineCode/InlineCode"
 import { PostImage } from "../PostImage/PostImage"
@@ -17,6 +18,7 @@ const Markdown = ({ source, slug }) => {
       options={{
         overrides: {
           ...demos,
+          TwitterTweet: TwitterTweet,
           pre: SyntaxHighlightWrapper,
           code: InlineCode,
           img: PostImage,

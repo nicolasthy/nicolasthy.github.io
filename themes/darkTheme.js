@@ -23,6 +23,9 @@ export const DARK_THEME = {
   profile: {
     background: COLORS.primary,
   },
+  about: {
+    mockup: "/static/mockup-portrait-dark.png",
+  },
   header: {
     background: "#161413",
   },
@@ -45,5 +48,12 @@ export const DARK_THEME = {
     imageBackgroundOverlay: "#0E0C0C",
     inlineCodeBackground: hex2rgba(COLORS.light, 0.1),
     inlineCodeColor: hex2rgba(COLORS.secondary, 0.8),
+  },
+  playlists: {
+    itemBackground: "#1E1B1A",
+    itemShadow: "0 1px 2px 0 rgba(5, 7, 26, 0.2)",
+    itemHoverShadow: "0 16px 12px -10px rgba(5, 7, 26, 0.2)",
+    itemOpacity: 1,
+    itemHoverOpacity: 0.7,
   },
 }

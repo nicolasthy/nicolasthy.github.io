@@ -6,6 +6,7 @@ export const Container = styled.div`
   align-items: center;
   margin: 50px 0;
   font-family: ${FONTS.sansSerif};
+  opacity: 0;
 `
 
 export const Bio = styled.div`

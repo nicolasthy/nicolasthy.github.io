@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { PostTime } from "../../PostTime/PostTime"
+
 import { FONTS, LANGUAGES_COLORS } from "../../../../themes/constants"
 
 export const Container = styled.li`
@@ -22,9 +24,16 @@ export const Container = styled.li`
 `
 
 export const StyledLink = styled.div`
+  opacity: 0;
+
   a {
     text-decoration: none;
   }
+`
+
+export const StyledPostTime = styled(PostTime)`
+  padding-bottom: 5px;
+  color: red;
 `
 
 export const PostTitle = styled.h3`

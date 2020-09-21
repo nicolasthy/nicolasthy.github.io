@@ -3,7 +3,7 @@ title: "Spina: A Ruby on Rails CMS"
 author: Nicolas Thiry
 tags: ["ruby"]
 excerpt: Introduction to a new CMS built on Ruby on Rails. This is a step by step guide to get started with it.
-created_at: '2016-03-11 15:00:00 Z'
+created_at: '2016-03-11T15:00:00Z'
 published: true
 related: 2016-03-23-spina-blog-tutorial
 ---

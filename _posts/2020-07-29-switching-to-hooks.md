@@ -3,8 +3,8 @@ title: "Switching to React Hooks"
 author: Nicolas Thiry
 tags: ["react"]
 excerpt: How I switched from React components to React Hooks on a large scale application.
-created_at: "2020-07-29 12:00:00 Z"
-published: false
+created_at: "2020-07-29T12:00:00Z"
+published: true
 ---
 
 For a long time React components were written as `class` components. Before getting into details about the why and how, let's have a look at the same component written with and without Hooks.

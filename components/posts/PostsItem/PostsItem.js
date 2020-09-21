@@ -1,8 +1,6 @@
 import Link from "next/link"
 
-import { PostTime } from "../PostTime/PostTime"
-
-import { Container, StyledLink, PostTitle, TagsList, TagsItem } from "./styles"
+import { Container, StyledLink, StyledPostTime, PostTitle, TagsList, TagsItem } from "./styles"
 
 const PostsItem = ({ post }) => {
   return (
@@ -11,7 +9,7 @@ const PostsItem = ({ post }) => {
         <a>
           <Container>
             <PostTitle>{post.title}</PostTitle>
-            <PostTime post={post} />
+            <StyledPostTime post={post} />
             <p>{post.excerpt}</p>
             <TagsList>
               {post.tags &&

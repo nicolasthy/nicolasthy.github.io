@@ -1,7 +1,7 @@
 ﻿---
 title: "Hello World 5"
 author: Nicolas Thiry
-created_at: '2020-01-08 23:00:00 Z'
+created_at: '2020-01-08T23:00:00Z'
 tags: ["javascript"]
 published: false
 ---
@@ -26,7 +26,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { okaidia } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const SyntaxHighlight = props => {
-    console.log(props);
     const { value, language = null } = props;
     return (
         <SyntaxHighlighter language={language} style={okaidia}>

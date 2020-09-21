@@ -3,7 +3,7 @@ title: "Spina Advanced: Overriding"
 author: Nicolas Thiry
 tags: ["ruby"]
 excerpt: Going further with Spina and trying to override it's default behavior to fits our needs.
-created_at: '2016-03-23 15:00:00 Z'
+created_at: '2016-03-23T15:00:00Z'
 published: true
 ---
 

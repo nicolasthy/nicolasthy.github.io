@@ -1,7 +1,7 @@
 ﻿---
 title: "Hello World 3"
 author: Nicolas Thiry
-created_at: '2020-01-08 21:00:00 Z'
+created_at: '2020-01-08T21:00:00Z'
 tags: ["ruby"]
 published: false
 ---

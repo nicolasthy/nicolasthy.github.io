@@ -1,7 +1,7 @@
 ﻿---
 title: "Hello World 4"
 author: Nicolas Thiry
-created_at: '2020-01-08 22:00:00 Z'
+created_at: '2020-01-08T22:00:00Z'
 tags: ["html"]
 published: false
 ---

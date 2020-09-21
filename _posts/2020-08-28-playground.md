@@ -3,7 +3,7 @@ title: "Playground"
 author: Nicolas Thiry
 tags: ["react"]
 excerpt: Test for rendering react components in markdown
-created_at: "2020-08-28 12:00:00 Z"
+created_at: "2020-08-28T12:00:00Z"
 published: false
 ---
 

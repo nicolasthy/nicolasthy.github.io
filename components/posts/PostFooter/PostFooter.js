@@ -1,6 +1,7 @@
 import { ProfilePicture } from "../../shared/ProfilePicture/ProfilePicture"
 import { PostsList } from "../PostsList/PostsList"
 import { ArrowLink } from "../../shared/ArrowLink/ArrowLink"
+import { SharePost } from "../../posts/SharePost/SharePost"
 
 import { Footer, Container, Bio, RelatedPost } from "./styles"
 
@@ -10,8 +11,13 @@ const PostFooter = ({ post }) => {
       <Container>
         <ProfilePicture />
         <Bio>
-          <span>Written by</span>
-          <strong>Nicolas Thiry</strong>
+          <div>
+            <div>
+              <span>Written by</span>
+              <strong>Nicolas Thiry</strong>
+            </div>
+            <SharePost />
+          </div>
           <p>
             This site is my personal space where I write and share things that I enjoy working with. If you liked it and
             want to share some feedback, send me a message on Twitter!

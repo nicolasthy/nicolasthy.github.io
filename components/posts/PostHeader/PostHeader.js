@@ -1,13 +1,25 @@
 import { PostTime } from "../PostTime/PostTime"
+import { SharePost } from "../SharePost/SharePost"
 
-import { Title } from "./styles"
+import { Container, Title, About, PostDetails, AuthorImage } from "./styles"
 
 const PostHeader = ({ post }) => {
   return (
-    <>
+    <Container>
       <Title>{post.title}</Title>
-      <PostTime post={post} />
-    </>
+      <About>
+        <PostDetails>
+          <AuthorImage>
+            <img src="/nicolas_thiry.png" alt="Nicolas Thiry" />
+          </AuthorImage>
+          <div>
+            Nicolas Thiry
+            <PostTime post={post} />
+          </div>
+        </PostDetails>
+        <SharePost />
+      </About>
+    </Container>
   )
 }
 

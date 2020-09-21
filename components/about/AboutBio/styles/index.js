@@ -4,7 +4,7 @@ import { FONTS } from "../../../../themes/constants"
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 0;
 `
 
 export const Bio = styled.div`

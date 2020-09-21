@@ -1,11 +1,14 @@
 import styled from "styled-components"
 
 import { FONTS } from "../../../../themes/constants"
+import { hex2rgba } from "../../../../themes/utils"
 
 export const Footer = styled.div`
   border-top: 1px solid rgba(5, 7, 26, 0.05);
   margin: 30px 0 10px;
   padding: 20px 0 10px;
+  opacity: 0;
+  transform: translateY(40px);
 `
 
 export const Container = styled.div`
@@ -32,6 +35,12 @@ export const Bio = styled.div`
     font-size: 14px;
     opacity: 0.5;
   }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 export const RelatedPost = styled.div`
@@ -44,7 +53,7 @@ export const RelatedPost = styled.div`
     display: block;
     font-family: ${FONTS.sansSerif};
     font-size: 16px;
-    color: rgba(25, 23, 22, 0.5);
+    color: ${({ theme }) => hex2rgba(theme.textLight, 0.5)};
     text-align: center;
   }
 

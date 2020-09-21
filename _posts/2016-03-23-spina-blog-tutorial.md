@@ -3,7 +3,7 @@ title: "Spina Advanced: Building a blog"
 author: Nicolas Thiry
 tags: ["ruby"]
 excerpt: Implementing an existing Spina plugin to create a blog.
-created_at: '2016-03-23 15:00:00 Z'
+created_at: '2016-03-23T15:00:00Z'
 published: true
 ---
 

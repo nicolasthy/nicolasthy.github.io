@@ -3,8 +3,8 @@ title: "Create your own blog using Next.js"
 author: Nicolas Thiry
 tags: ["react"]
 excerpt: Next.js is a powerful and popular React framework that helps you create easily SSR applications.
-created_at: "2020-07-29 14:00:00 Z"
-published: true
+created_at: "2020-07-29T14:00:00Z"
+published: false
 ---
 
 Let's get started an create a blog using Next.js. This step by step guide is using various dependencies that I've chosen and with whom I'm comfortable with.
@@ -28,7 +28,7 @@ I will be using React Hooks and styled-component. Here is a list of the versions
 
 I will also assume that you have basic knowledge of Javascript and React.
 
-### Create a Next.js project
+## Create a Next.js project
 
 First of all let's initialize the project:
 

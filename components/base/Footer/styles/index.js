@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const FooterText = styled.p`
   color: ${({ theme }) => theme.footer.text};
   line-height: 1.6;
+  font-size: 12px;
   margin: 0;
   padding: 0;
 `

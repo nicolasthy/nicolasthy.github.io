@@ -23,6 +23,9 @@ export const LIGHT_THEME = {
   profile: {
     background: COLORS.secondary,
   },
+  about: {
+    mockup: "/static/mockup-portrait.png",
+  },
   header: {
     background: "#FCFCFF",
   },
@@ -45,5 +48,12 @@ export const LIGHT_THEME = {
     imageBackgroundOverlay: "#F7F7FF",
     inlineCodeBackground: hex2rgba(COLORS.dark, 0.05),
     inlineCodeColor: hex2rgba(COLORS.primary, 0.8),
+  },
+  playlists: {
+    itemBackground: "#FFFFFF",
+    itemShadow: "0 1px 2px 0 rgba(5, 7, 26, 0.1)",
+    itemHoverShadow: "0 16px 12px -10px rgba(5, 7, 26, 0.1)",
+    itemOpacity: 0.65,
+    itemHoverOpacity: 1,
   },
 }

@@ -4,6 +4,8 @@ import Markdown from "markdown-to-jsx"
 export const StyledMarkdown = styled(Markdown)`
   font-size: 18px;
   line-height: 2.125;
+  opacity: 0;
+  transform: translateY(40px);
 
   p {
     color: ${({ theme }) => theme.textLight};

@@ -18,9 +18,9 @@ const PostsList = ({ posts }) => {
     if (postItems) {
       anime({
         targets: postItems,
-        translateY: [100, 0],
+        translateY: [40, 0],
         opacity: [0, 1],
-        duration: 1000,
+        duration: 800,
         delay: anime.stagger(100, { start: 300 }),
       })
     }
