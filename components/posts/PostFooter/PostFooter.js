@@ -1,19 +1,18 @@
-import { ProfilePicture } from "../../shared/ProfilePicture/ProfilePicture"
 import { PostsList } from "../PostsList/PostsList"
 import { ArrowLink } from "../../shared/ArrowLink/ArrowLink"
 import { SharePost } from "../../posts/SharePost/SharePost"
 
-import { Footer, Container, Bio, RelatedPost } from "./styles"
+import { Footer, Container, Bio, RelatedPost, AuthorLabel, StyledProfilePicture } from "./styles"
 
 const PostFooter = ({ post }) => {
   return (
     <Footer>
       <Container>
-        <ProfilePicture />
+        <StyledProfilePicture />
         <Bio>
           <div>
             <div>
-              <span>Written by</span>
+              <AuthorLabel>Written by</AuthorLabel>
               <strong>Nicolas Thiry</strong>
             </div>
             <SharePost />

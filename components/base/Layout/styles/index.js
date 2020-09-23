@@ -6,4 +6,8 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   font-family: "Lora", serif;
+
+  @media only screen and (max-device-width: 812px) {
+    padding: 0 20px;
+  }
 `

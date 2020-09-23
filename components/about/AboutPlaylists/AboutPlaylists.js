@@ -1,5 +1,6 @@
 import { PlaylistsList } from "../../playlists/PlaylistsList/PlaylistsList"
 import { ArrowLink } from "../../shared/ArrowLink/ArrowLink"
+import { EXTERNAL_URI } from "../../../config/siteConfig"
 
 import { Container } from "./styles"
 
@@ -8,7 +9,7 @@ const AboutPlaylists = () => {
     <Container>
       <span>Discover nineteen musique</span>
       <PlaylistsList />
-      <ArrowLink href={"/posts"} as={"/posts"} label="View all playlists" />
+      <ArrowLink href={EXTERNAL_URI.spotify} label="View all playlists" internal={false} />
     </Container>
   )
 }

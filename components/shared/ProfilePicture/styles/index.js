@@ -5,6 +5,10 @@ export const Container = styled.div`
   width: 115px;
   color: ${({ theme }) => theme.profile.background};
   margin: 0 50px 0 0;
+
+  @media only screen and (max-device-width: 812px) {
+    margin: 0 25px 0 0;
+  }
 `
 
 export const Picture = styled.img`

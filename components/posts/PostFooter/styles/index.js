@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { ProfilePicture } from "../../../shared/ProfilePicture/ProfilePicture"
+
 import { FONTS } from "../../../../themes/constants"
 import { hex2rgba } from "../../../../themes/utils"
 
@@ -17,14 +19,6 @@ export const Container = styled.div`
 `
 
 export const Bio = styled.div`
-  span {
-    display: block;
-    text-transform: uppercase;
-    font-family: ${FONTS.sansSerif};
-    font-size: 12px;
-    opacity: 0.3;
-  }
-
   strong {
     font-weight: 400;
     font-size: 20px;
@@ -66,5 +60,19 @@ export const RelatedPost = styled.div`
         margin: 20px 0;
       }
     }
+  }
+`
+
+export const AuthorLabel = styled.span`
+  display: block;
+  text-transform: uppercase;
+  font-family: ${FONTS.sansSerif};
+  font-size: 12px;
+  opacity: 0.3;
+`
+
+export const StyledProfilePicture = styled(ProfilePicture)`
+  @media only screen and (max-device-width: 812px) {
+    display: none;
   }
 `

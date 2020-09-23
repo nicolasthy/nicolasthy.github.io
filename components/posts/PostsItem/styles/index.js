@@ -1,8 +1,10 @@
 import styled from "styled-components"
+import { darken, meetsContrastGuidelines } from "polished"
 
 import { PostTime } from "../../PostTime/PostTime"
 
 import { FONTS, LANGUAGES_COLORS } from "../../../../themes/constants"
+import { getContrastRatio } from "../../../../themes/utils"
 
 export const Container = styled.li`
   background: ${({ theme }) => theme.posts.item};
@@ -58,5 +60,11 @@ export const TagsItem = styled.li`
   font-family: ${FONTS.sansSerif};
   background: ${({ tag }) => LANGUAGES_COLORS[tag] || "#000000"};
   border-radius: 50px;
-  color: #f7f7ff;
+  color: ${({ tag }) => {
+    return LANGUAGES_COLORS[tag]
+      ? meetsContrastGuidelines(LANGUAGES_COLORS[tag], "#fff").AALarge
+        ? "#fff"
+        : darken(0.3, LANGUAGES_COLORS[tag])
+      : "#fff"
+  }};
 `

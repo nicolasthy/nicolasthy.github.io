@@ -11,6 +11,7 @@ export const Label = styled.span`
   font-family: ${FONTS.sansSerif};
   text-transform: uppercase;
   margin: 0 0 10px 0;
+  opacity: 0.45;
 `
 
 export const Actions = styled.div``

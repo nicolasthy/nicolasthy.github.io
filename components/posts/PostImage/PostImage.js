@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from "react"
 import mediumZoom from "medium-zoom"
+import { isMobile } from "react-device-detect"
 
 import { StyledImage, StyledAlt } from "./styles"
 
@@ -10,7 +11,9 @@ const PostImage = ({ alt, src }) => {
   const [image, setImage] = useState(imagePreloader)
 
   useEffect(() => {
-    mediumZoom(imageRef.current)
+    if (!isMobile) {
+      mediumZoom(imageRef.current)
+    }
 
     const imageFull = new Image()
     imageFull.onload = () => {
@@ -21,7 +24,7 @@ const PostImage = ({ alt, src }) => {
     return () => {
       imageFull.onload = null
     }
-  }, [])
+  }, [isMobile])
 
   return (
     <>

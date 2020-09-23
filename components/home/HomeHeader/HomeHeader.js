@@ -31,7 +31,7 @@ const HomeHeader = () => {
       <Bio>
         <p>Hello 👋</p>
         <p>
-          I’m <strong>Nicolas</strong>, a passionate front-end developer.
+          I’m <strong>Nicolas Thiry</strong>, a passionate front-end developer.
         </p>
       </Bio>
     </Container>

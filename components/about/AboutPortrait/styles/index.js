@@ -4,6 +4,8 @@ import { hex2rgba } from "../../../../themes/utils"
 
 export const Container = styled.div`
   position: relative;
+  width: 250px;
+  margin: 0 auto;
 `
 
 export const Mockup = styled.img`
@@ -13,6 +15,15 @@ export const Mockup = styled.img`
   transform: rotate(5deg);
   transition: filter 3s cubic-bezier(0.19, 1, 0.22, 1);
 
+  @media only screen and (max-device-width: 765px) {
+    margin-left: -15px;
+    transform: rotate(0);
+  }
+
+  @media only screen and (max-device-width: 812px) {
+    margin-left: -5px;
+  }
+
   &:hover {
     filter: drop-shadow(15px 35px 25px rgba(0, 0, 0, 0.2));
   }
@@ -21,11 +32,20 @@ export const Mockup = styled.img`
 export const Portraits = styled.div`
   position: absolute;
   width: 181px;
-  right: 21px;
+  left: 98px;
   top: 125px;
   height: 240px;
   overflow: hidden;
   transform: rotate(5deg);
+
+  @media only screen and (max-device-width: 765px) {
+    left: 34px;
+    transform: rotate(0);
+  }
+
+  @media only screen and (max-device-width: 812px) {
+    left: 44px;
+  }
 
   img {
     position: absolute;
@@ -46,6 +66,10 @@ export const IconRight = styled.div`
   border-radius: 100px;
   padding: 10px;
   transition: 0.4s ease-out;
+
+  @media only screen and (max-device-width: 765px) {
+    transform: translateY(-50%) rotate(0);
+  }
 
   &:hover {
     cursor: pointer;

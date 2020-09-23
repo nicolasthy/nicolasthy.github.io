@@ -1,10 +1,15 @@
 import styled from "styled-components"
 
 export const StyledImage = styled.span`
-  max-width: 120%;
-  margin: 40px -10% 20px;
+  max-width: 105%;
+  margin: 40px 0 20px;
   display: block;
   position: relative;
+
+  @media only screen and (min-device-width: 1200px) {
+    max-width: 120%;
+    margin: 40px -10% 20px;
+  }
 
   img {
     opacity: 0;
@@ -43,10 +48,10 @@ export const StyledImage = styled.span`
 `
 
 export const StyledAlt = styled.span`
-    display: block;
-    text-align: center;
-    margin: 0 0 40px;
-    font-size: 12px;
-    opacity: 0.5;
-    font-family: "Poppins", sans-serif;
-`;
+  display: block;
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 12px;
+  opacity: 0.5;
+  font-family: "Poppins", sans-serif;
+`

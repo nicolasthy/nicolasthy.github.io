@@ -2,7 +2,6 @@ import { useRouter } from "next/router"
 
 import { Twitter } from "@styled-icons/boxicons-logos/Twitter"
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare"
-import { DotsHorizontal } from "@styled-icons/heroicons-outline/DotsHorizontal"
 
 import { Container, Label, Actions, Link } from "./styles"
 
@@ -28,7 +27,7 @@ const SharePost = () => {
   }
 
   const handleSharePost = (social) => {
-    openInWindow(`${SOCIAL_URLS[social].url}https://www.nicolasthy.xyz/learning-reactjs/`)
+    openInWindow(`${SOCIAL_URLS[social].url}https://www.nicolasthy.xyz${router.asPath}`)
   }
 
   return (
@@ -40,9 +39,6 @@ const SharePost = () => {
         </Link>
         <Link onClick={() => handleSharePost("twitter")} title="Share on Twitter">
           <Twitter size={24} />
-        </Link>
-        <Link>
-          <DotsHorizontal size={24} />
         </Link>
       </Actions>
     </Container>

@@ -11,6 +11,10 @@ export const Container = styled.div`
   width: 75%;
   margin: 45px auto;
   font-family: ${FONTS.sansSerif};
+
+  @media only screen and (max-device-width: 812px) {
+    width: 95%;
+  }
 `
 
 export const FooterText = styled.p`

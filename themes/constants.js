@@ -17,4 +17,6 @@ export const LANGUAGES_COLORS = {
   ruby: "#F15BB5",
   javascript: "#FEE020",
   react: "#0137A2",
+  story: "#9B5DE5",
+  "case study": "#00F5D4",
 }

@@ -8,12 +8,17 @@ export const Container = styled.div`
 export const Title = styled.h1`
   font-size: 52px;
   line-height: 1.1;
+
+  @media only screen and (max-device-width: 812px) {
+    font-size: 36px;
+  }
 `
 
 export const About = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 40px 0;
 `
 
 export const PostDetails = styled.div`

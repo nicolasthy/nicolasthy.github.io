@@ -10,13 +10,17 @@ export const Container = styled.div`
 export const CopyLink = styled.span`
   position: absolute;
   top: 0;
-  left: -10%;
+  left: 0;
   margin: 10px 0 0 25px;
   font-family: ${FONTS.sansSerif};
   font-size: 12px;
   opacity: 0.3;
   cursor: pointer;
   transition: opacity 0.2s linear;
+
+  @media only screen and (min-device-width: 1200px) {
+    left: -10%;
+  }
 
   > span {
     display: flex;
@@ -52,7 +56,7 @@ export const CopyLinkChecked = styled.span`
 export const CodeLanguage = styled.span`
   position: absolute;
   top: 0;
-  right: -10%;
+  right: 0;
   margin: 10px 10px 0 0;
   padding: 3px 10px;
   border-radius: 50px;
@@ -63,6 +67,10 @@ export const CodeLanguage = styled.span`
   color: #fff;
   text-align: center;
   background: ${({ language }) => LANGUAGES_COLORS[language] || "#000000"};
+
+  @media only screen and (min-device-width: 1200px) {
+    right: -10%;
+  }
 `
 
 export const StyledSyntaxHighlight = styled(SyntaxHighlighter)`
@@ -72,7 +80,11 @@ export const StyledSyntaxHighlight = styled(SyntaxHighlighter)`
   line-height: 1;
   font-family: ${FONTS.code};
   padding: 50px 0 15px !important;
-  margin: 25px 0 25px -10%;
+  margin: 25px 0;
   border-radius: 4px;
-  width: 120%;
+
+  @media only screen and (min-device-width: 1200px) {
+    width: 120%;
+    margin: 25px 0 25px -10%;
+  }
 `
