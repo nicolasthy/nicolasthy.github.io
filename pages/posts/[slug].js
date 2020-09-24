@@ -44,13 +44,13 @@ export default function Post({ post }) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={`${post.title} - ${title}`} />
         <meta property="og:description" content={post.excerpt || description} />
-        <meta property="og:image" content={`/static/posts/${post.slug}/cover.jpg`} />
+        <meta property="og:image" content={`https://www.nicolasthy.xyz/static/posts/${post.slug}/cover.jpg`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nicolasthy" />
         <meta name="twitter:title" content={`${post.title} - ${title}`} />
         <meta name="twitter:description" content={post.excerpt || description} />
-        <meta name="twitter:image" content={`/static/posts/${post.slug}/cover.jpg`} />
+        <meta name="twitter:image" content={`https://www.nicolasthy.xyz/static/posts/${post.slug}/cover.jpg`} />
       </Head>
       <div ref={contentRef}>
         <PostHeader post={post} />
