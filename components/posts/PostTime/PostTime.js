@@ -3,7 +3,7 @@ import { format } from "date-fns"
 import { Container } from "./styles"
 
 const PostTime = ({ className, post }) => {
-  const formattedDate = format(new Date(post.created_at), "MMMM io yyy")
+  const formattedDate = format(new Date(post.created_at), "MMMM do yyy")
   
   return (
     <Container className={className}>

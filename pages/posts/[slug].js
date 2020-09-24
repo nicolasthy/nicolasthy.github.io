@@ -38,7 +38,7 @@ export default function Post({ post }) {
           {post.title} - {title}
         </title>
         <meta name="description" content={post.excerpt} />
-        <meta name="date" content={format(new Date(post.created_at), "MMMM io yyy")} />
+        <meta name="date" content={format(new Date(post.created_at), "MMMM do yyy")} />
 
         <meta property="og:url" content="http://www.nicolasthy.xyz/" />
         <meta property="og:type" content="article" />
