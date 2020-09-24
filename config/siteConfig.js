@@ -1,3 +1,15 @@
+export const SITE_CONFIG = {
+  title: "Nicolas Thiry",
+  description:
+    "I'm Nicolas Thiry a front-end developer exploring the world of JavaScript & the beauty of React. Currently living in Lyon, France.",
+  image: "/site-cover.jpg",
+  twitter_username: "nicolasthy",
+  github_username: "nicolasthy",
+  dribbble_username: "nicolasthy",
+  linkedin_username: "nicolasthy",
+  instagram_username: "nineteenmusique",
+}
+
 export const EXTERNAL_URI = {
   twitter: "https://twitter.com/nicolasthy",
   dribbble: "https://dribbble.com/nicolasthy",

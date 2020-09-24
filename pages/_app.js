@@ -1,21 +1,36 @@
 import Head from "next/head"
 import { PageTransition } from "next-page-transitions"
 
+import { SITE_CONFIG } from "../config/siteConfig"
 import { GA_TRACKING_ID } from "../lib/gtag"
 import { ThemeProvider } from "../contexts/ThemeProvider"
 
 const MyApp = ({ Component, pageProps, router }) => {
+  const { title, description, image } = SITE_CONFIG
   return (
     <ThemeProvider>
       <Head>
-        <title>Nicolas Thiry</title>
-        <meta name="description" content="Nicolas Thiry" />
-        <meta name="robots" content="noindex, nofollow" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="author" content={title} />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:url" content="http://www.nicolasthy.xyz/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@nicolasthy" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+
         <link
           href="https://fonts.googleapis.com/css?family=Lora:ital,wght@0,400;0,700;1,400;1,700|Poppins:400,500,600,700&display=swap"
           rel="stylesheet"
         ></link>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
         <script
           dangerouslySetInnerHTML={{

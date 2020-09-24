@@ -3,6 +3,9 @@ import { useRouter } from "next/router"
 import ErrorPage from "next/error"
 import Head from "next/head"
 import anime from "animejs"
+import { format } from "date-fns"
+
+import { SITE_CONFIG } from "../../config/siteConfig"
 
 import { PostHeader } from "../../components/posts/PostHeader/PostHeader"
 import { PostFooter } from "../../components/posts/PostFooter/PostFooter"
@@ -13,6 +16,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/api"
 export default function Post({ post }) {
   const router = useRouter()
   const contentRef = useRef()
+  const { title, description } = SITE_CONFIG
 
   useEffect(() => {
     anime({
@@ -30,8 +34,23 @@ export default function Post({ post }) {
   return (
     <>
       <Head>
-        <title>{post.title} - Nicolas Thiry</title>
+        <title>
+          {post.title} - {title}
+        </title>
         <meta name="description" content={post.excerpt} />
+        <meta name="date" content={format(new Date(post.created_at), "MMMM io yyy")} />
+
+        <meta property="og:url" content="http://www.nicolasthy.xyz/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`${post.title} - ${title}`} />
+        <meta property="og:description" content={post.excerpt || description} />
+        <meta property="og:image" content={`/static/posts/${post.slug}/cover.jpg`} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@nicolasthy" />
+        <meta name="twitter:title" content={`${post.title} - ${title}`} />
+        <meta name="twitter:description" content={post.excerpt || description} />
+        <meta name="twitter:image" content={`/static/posts/${post.slug}/cover.jpg`} />
       </Head>
       <div ref={contentRef}>
         <PostHeader post={post} />
@@ -43,7 +62,15 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, ["title", "created_at", "slug", "content", "readingTime", "related"])
+  const post = getPostBySlug(params.slug, [
+    "title",
+    "excerpt",
+    "created_at",
+    "slug",
+    "content",
+    "readingTime",
+    "related",
+  ])
 
   if (post.related) {
     post.relatedPost = getPostBySlug(post.related, [
