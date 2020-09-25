@@ -59,7 +59,7 @@ export const Portraits = styled.div`
 export const IconRight = styled.div`
   position: absolute;
   top: 55%;
-  right: -60px;
+  right: -100px;
   transform: translateY(-50%) rotate(5deg);
   background: ${({ theme }) => hex2rgba(theme.textStrong, 0.03)};
   color: ${({ theme }) => hex2rgba(theme.textStrong, 0.4)};
