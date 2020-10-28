@@ -34,7 +34,7 @@ const Header = ({ toggleDarkMode }) => {
       <Menu>
         <MenuItem active={isMenuItemActive("posts")}>
           <Link href="/" as="/">
-            <a>Stories</a>
+            <a>Writings</a>
           </Link>
         </MenuItem>
         <MenuItem active={isMenuItemActive("about")}>
