@@ -1,5 +1,3 @@
-import { language } from "gray-matter"
-
 export const COLORS = {
   primary: "#9B5DE5",
   secondary: "#CFF7B9",
@@ -16,7 +14,7 @@ export const FONTS = {
 export const LANGUAGES_COLORS = {
   ruby: "#F15BB5",
   javascript: "#FEE020",
-  react: "#0137A2",
+  react: "#4361EE",
   story: "#9B5DE5",
   "case study": "#00F5D4",
 }
